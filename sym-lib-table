@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name otter-calc-rescue)(type Legacy)(uri ${KIPRJMOD}/otter-calc-rescue.lib)(options "")(descr ""))
+)
