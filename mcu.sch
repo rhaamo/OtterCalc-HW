@@ -2858,24 +2858,21 @@ F 3 "~" H 7900 5500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pspice:DIODE D?
+L Device:D_Schottky D?
 U 1 1 608357AD
 P 8250 5500
-F 0 "D?" H 8250 5765 50  0000 C CNN
-F 1 "SMA5819" H 8250 5674 50  0000 C CNN
+F 0 "D?" H 8250 5283 50  0000 C CNN
+F 1 "MBRS140T3G" H 8250 5374 50  0000 C CNN
 F 2 "" H 8250 5500 50  0001 C CNN
 F 3 "~" H 8250 5500 50  0001 C CNN
 	1    8250 5500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
-Text Notes 8000 5200 0    79   ~ 0
-validate pn
 Wire Wire Line
 	6450 6000 5900 6000
 Connection ~ 5900 6000
 Wire Wire Line
 	8050 6000 8050 5500
-Connection ~ 8050 5500
 Wire Wire Line
 	7750 5500 5350 5500
 Wire Wire Line
@@ -3096,8 +3093,6 @@ Wire Wire Line
 Wire Wire Line
 	9100 6100 9100 5800
 Connection ~ 8650 6100
-Wire Wire Line
-	8450 5500 8650 5500
 Connection ~ 8650 5500
 Wire Wire Line
 	8650 5500 9100 5500
@@ -3173,4 +3168,9 @@ Wire Wire Line
 	10850 3350 10850 3250
 Wire Wire Line
 	11050 3450 11050 3250
+Wire Wire Line
+	8100 5500 8050 5500
+Connection ~ 8050 5500
+Wire Wire Line
+	8400 5500 8650 5500
 $EndSCHEMATC
