@@ -893,12 +893,8 @@ F 3 "~" H 7800 3200 50  0001 C CNN
 	1    7800 3000
 	1    0    0    -1  
 $EndComp
-Text Notes 1500 6400 0    79   ~ 0
-total of 80 keys
 Text Notes 3450 6750 0    79   ~ 0
 COL are inputs, pull-up sw\nROW output
-Text Notes 1950 7050 0    118  ~ 0
-ON button needs its own row for wakeup purpose
 Text GLabel 1000 4500 0    50   Input ~ 0
 KB_ROW_8
 Text GLabel 1000 4200 0    50   Input ~ 0
@@ -1592,4 +1588,6 @@ Text GLabel 1000 5300 0    50   Input ~ 0
 KB_ROW_10
 Text GLabel 1000 5700 0    50   Input ~ 0
 KB_ROW_11
+Text Notes 1950 7050 0    118  ~ 0
+ON button needs its own row for wakeup purpose
 $EndSCHEMATC
