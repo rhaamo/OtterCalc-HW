@@ -1068,6 +1068,6 @@ Connection ~ 2300 10900
 Wire Wire Line
 	1900 10900 1800 10900
 Connection ~ 1800 10900
-Text GLabel 6000 5050 0    39   Input ~ 0
-OTG_???
+Text GLabel 6250 5050 0    39   Input ~ 0
+OTG_EN
 $EndSCHEMATC

@@ -1739,7 +1739,6 @@ F 3 "" H 9950 6200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 12750 6350
-NoConn ~ 12750 6650
 Text GLabel 10300 5900 0    39   Input ~ 0
 BAT_SCL
 Text GLabel 10300 6000 0    39   Input ~ 0
@@ -2311,4 +2310,8 @@ Wire Notes Line
 	6900 3550 6900 5000
 Wire Notes Line
 	6900 3550 11550 3550
+Text GLabel 12750 6650 0    39   Input ~ 0
+OTG_EN
+Text Notes 13100 6700 0    39   ~ 0
+output
 $EndSCHEMATC
