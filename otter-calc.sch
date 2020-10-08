@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -24,5 +24,11 @@ S 7500 2000 1000 500
 U 5F7C2A49
 F0 "keyboard" 50
 F1 "keyboard.sch" 50
+$EndSheet
+$Sheet
+S 5250 2000 1200 500 
+U 60CFD8F5
+F0 "power" 39
+F1 "power.sch" 39
 $EndSheet
 $EndSCHEMATC
