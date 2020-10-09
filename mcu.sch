@@ -1195,7 +1195,7 @@ Wire Wire Line
 Text GLabel 12750 2350 0    50   Input ~ 0
 BOOT0
 Text Notes 600  11100 0    98   ~ 0
-TODO to validate:\n- BOOT0 behavior\n- WAKEUP through ON behavior\n- RESET\n- caps for stm32 25MHz xtal\n- if usb host, VUSB isn't powered
+TODO to validate:\n- BOOT0 behavior\n- WAKEUP through ON behavior\n- RESET\n- caps for stm32 25MHz xtal
 Text GLabel 4800 9350 0    50   Input ~ 0
 KB_ROW_11
 $Comp
