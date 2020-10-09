@@ -1244,10 +1244,6 @@ Text Notes 13100 7600 0    39   ~ 0
 keyboard col in
 Text Notes 13100 8300 0    39   ~ 0
 keyboard col in
-Text GLabel 2900 1700 2    39   Input ~ 0
-SERIAL3_RX
-Text GLabel 3000 1500 2    39   Input ~ 0
-SERIAL3_TX
 Text GLabel 12750 4750 0    39   Input ~ 0
 SERIAL3_RX
 Text Notes 13050 4800 0    39   ~ 0
@@ -2072,10 +2068,6 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 1700 2800 1700
-Wire Wire Line
-	3000 1500 2800 1500
-Wire Wire Line
 	8100 5500 8050 5500
 Connection ~ 8050 5500
 Wire Wire Line
@@ -2332,35 +2324,13 @@ Text GLabel 1600 1600 0    39   Input ~ 0
 esp32_sens_vp
 Text GLabel 1600 1700 0    39   Input ~ 0
 esp32_sens_vn
-$Comp
-L Device:Jumper_NC_Small JP2
-U 1 1 60FA4DA3
-P 4000 3100
-F 0 "JP2" H 4000 3312 50  0000 C CNN
-F 1 "serTX" H 4000 3221 50  0000 C CNN
-F 2 "" H 4000 3100 50  0001 C CNN
-F 3 "~" H 4000 3100 50  0001 C CNN
-	1    4000 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP3
-U 1 1 60FA5BE1
-P 4000 3400
-F 0 "JP3" H 4000 3612 50  0000 C CNN
-F 1 "serRX" H 4000 3521 50  0000 C CNN
-F 2 "" H 4000 3400 50  0001 C CNN
-F 3 "~" H 4000 3400 50  0001 C CNN
-	1    4000 3400
-	1    0    0    -1  
-$EndComp
-Text GLabel 3900 3100 0    39   Input ~ 0
+Text GLabel 4000 3900 0    39   Input ~ 0
 SERIAL3_TX
-Text GLabel 3900 3400 0    39   Input ~ 0
+Text GLabel 4000 4550 0    39   Input ~ 0
 SERIAL3_RX
-Text GLabel 4100 3100 2    39   Input ~ 0
+Text GLabel 4500 3900 2    39   Input ~ 0
 esp32_iotxd0
-Text GLabel 4100 3400 2    39   Input ~ 0
+Text GLabel 4500 4550 2    39   Input ~ 0
 esp32_iorxd0
 Text GLabel 2800 3600 2    39   Input ~ 0
 esp32_io34
@@ -2553,4 +2523,34 @@ Wire Wire Line
 Connection ~ 12150 3750
 Text Notes 11950 3400 0    39   ~ 0
 ABMM2-25.000MHZ-D1-T\nLc=18pF\nCstray=10pF\nCl=(16*16)/(16+16)+10
+$Comp
+L Jumper:Jumper_3_Bridged12 JP2
+U 1 1 6107F2AD
+P 4250 3900
+F 0 "JP2" H 4250 4104 50  0000 C CNN
+F 1 "esp32 tx src" H 4250 4013 50  0000 C CNN
+F 2 "" H 4250 3900 50  0001 C CNN
+F 3 "~" H 4250 3900 50  0001 C CNN
+	1    4250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP3
+U 1 1 6107F61A
+P 4250 4550
+F 0 "JP3" H 4250 4754 50  0000 C CNN
+F 1 "esp32 rx src" H 4250 4663 50  0000 C CNN
+F 2 "" H 4250 4550 50  0001 C CNN
+F 3 "~" H 4250 4550 50  0001 C CNN
+	1    4250 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 1500 2    39   Input ~ 0
+ESP32_TX_SRC
+Text GLabel 4250 4050 2    39   Input ~ 0
+ESP32_TX_SRC
+Text GLabel 2800 1700 2    39   Input ~ 0
+ESP32_RX_SRC
+Text GLabel 4250 4700 2    39   Input ~ 0
+ESP32_RX_SRC
 $EndSCHEMATC
