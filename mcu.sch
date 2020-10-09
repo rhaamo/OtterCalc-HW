@@ -1276,9 +1276,9 @@ Text Notes 13100 7600 0    39   ~ 0
 keyboard col in
 Text Notes 13100 8300 0    39   ~ 0
 keyboard col in
-Text GLabel 2900 1700 3    39   Input ~ 0
+Text GLabel 2900 1700 2    39   Input ~ 0
 SERIAL3_RX
-Text GLabel 3000 1500 3    39   Input ~ 0
+Text GLabel 3000 1500 2    39   Input ~ 0
 SERIAL3_TX
 Text GLabel 12750 4750 0    39   Input ~ 0
 SERIAL3_RX
@@ -2162,37 +2162,6 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    2200 2600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1600 3100
-NoConn ~ 1600 3000
-NoConn ~ 1600 2900
-NoConn ~ 1600 2800
-NoConn ~ 1600 2700
-NoConn ~ 1600 2600
-NoConn ~ 1600 1700
-NoConn ~ 1600 1600
-NoConn ~ 1600 1400
-NoConn ~ 2800 1400
-NoConn ~ 2800 1600
-NoConn ~ 2800 1800
-NoConn ~ 2800 1900
-NoConn ~ 2800 2000
-NoConn ~ 2800 2100
-NoConn ~ 2800 2200
-NoConn ~ 2800 2300
-NoConn ~ 2800 2400
-NoConn ~ 2800 2500
-NoConn ~ 2800 2600
-NoConn ~ 2800 2700
-NoConn ~ 2800 2800
-NoConn ~ 2800 2900
-NoConn ~ 2800 3000
-NoConn ~ 2800 3100
-NoConn ~ 2800 3200
-NoConn ~ 2800 3300
-NoConn ~ 2800 3400
-NoConn ~ 2800 3500
-NoConn ~ 2800 3600
-NoConn ~ 2800 3700
 Wire Wire Line
 	2900 1700 2800 1700
 Wire Wire Line
@@ -2314,4 +2283,230 @@ Text GLabel 12750 6650 0    39   Input ~ 0
 OTG_EN
 Text Notes 13100 6700 0    39   ~ 0
 output
+$Comp
+L Connector_Generic:Conn_01x14 J11
+U 1 1 60EF2AB5
+P 4800 1850
+F 0 "J11" H 4718 2667 50  0000 C CNN
+F 1 "esp32L" H 4718 2576 50  0000 C CNN
+F 2 "" H 4800 1850 50  0001 C CNN
+F 3 "~" H 4800 1850 50  0001 C CNN
+	1    4800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x14 J13
+U 1 1 60EF5C8E
+P 5900 1850
+F 0 "J13" H 5980 1842 50  0000 L CNN
+F 1 "esp32R" H 5980 1751 50  0000 L CNN
+F 2 "" H 5900 1850 50  0001 C CNN
+F 3 "~" H 5900 1850 50  0001 C CNN
+	1    5900 1850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 J12
+U 1 1 60EF7DA9
+P 5300 2650
+F 0 "J12" V 5425 2596 50  0000 C CNN
+F 1 "esp32B" V 5516 2596 50  0000 C CNN
+F 2 "" H 5300 2650 50  0001 C CNN
+F 3 "~" H 5300 2650 50  0001 C CNN
+	1    5300 2650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4600 1250 0    39   Input ~ 0
+esp32_gnd
+Text GLabel 4600 1350 0    39   Input ~ 0
+esp32_3.3
+Text GLabel 4600 1450 0    39   Input ~ 0
+esp32_en
+Text GLabel 4600 1550 0    39   Input ~ 0
+esp32_sens_vp
+Text GLabel 4600 1650 0    39   Input ~ 0
+esp32_sens_vn
+Text GLabel 4600 1750 0    39   Input ~ 0
+esp32_io34
+Text GLabel 4600 1850 0    39   Input ~ 0
+esp32_io35
+Text GLabel 4600 1950 0    39   Input ~ 0
+esp32_io32
+Text GLabel 4600 2050 0    39   Input ~ 0
+esp32_io33
+Text GLabel 4600 2150 0    39   Input ~ 0
+esp32_io25
+Text GLabel 4600 2250 0    39   Input ~ 0
+esp32_io26
+Text GLabel 4600 2350 0    39   Input ~ 0
+esp32_io27
+Text GLabel 4600 2450 0    39   Input ~ 0
+esp32_io14
+Text GLabel 4600 2550 0    39   Input ~ 0
+esp32_io12
+Text GLabel 4900 2850 3    39   Input ~ 0
+esp32_gnd
+Text GLabel 5000 2850 3    39   Input ~ 0
+esp32_io13
+Text GLabel 5100 2850 3    39   Input ~ 0
+esp32_sd2
+Text GLabel 5200 2850 3    39   Input ~ 0
+esp32_sd3
+Text GLabel 5300 2850 3    39   Input ~ 0
+esp32_cmd
+Text GLabel 5400 2850 3    39   Input ~ 0
+esp32_clk
+Text GLabel 5500 2850 3    39   Input ~ 0
+esp32_sd0
+Text GLabel 5600 2850 3    39   Input ~ 0
+esp32_sd1
+Text GLabel 5700 2850 3    39   Input ~ 0
+esp32_io15
+Text GLabel 5800 2850 3    39   Input ~ 0
+esp32_io2
+Text GLabel 6100 2550 2    39   Input ~ 0
+esp32_io0
+Text GLabel 6100 2450 2    39   Input ~ 0
+esp32_io4
+Text GLabel 6100 2350 2    39   Input ~ 0
+esp32_io16
+Text GLabel 6100 2250 2    39   Input ~ 0
+esp32_io17
+Text GLabel 6100 2150 2    39   Input ~ 0
+esp32_io5
+Text GLabel 6100 2050 2    39   Input ~ 0
+esp32_io18
+Text GLabel 6100 1950 2    39   Input ~ 0
+esp32_io19
+NoConn ~ 6100 1850
+Text GLabel 6100 1750 2    39   Input ~ 0
+esp32_io21
+Text GLabel 6100 1650 2    39   Input ~ 0
+esp32_iorxd0
+Text GLabel 6100 1550 2    39   Input ~ 0
+esp32_iotxd0
+Text GLabel 6100 1450 2    39   Input ~ 0
+esp32_io22
+Text GLabel 6100 1350 2    39   Input ~ 0
+esp32_io23
+Text GLabel 6100 1250 2    39   Input ~ 0
+esp32_gnd
+Text GLabel 2650 4150 2    39   Input ~ 0
+esp32_gnd
+$Comp
+L power:GND #PWR044
+U 1 1 60F7A1BA
+P 2650 4150
+F 0 "#PWR044" H 2650 3900 50  0001 C CNN
+F 1 "GND" V 2655 4022 50  0000 R CNN
+F 2 "" H 2650 4150 50  0001 C CNN
+F 3 "" H 2650 4150 50  0001 C CNN
+	1    2650 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR043
+U 1 1 60F818C8
+P 2650 1050
+F 0 "#PWR043" H 2650 900 50  0001 C CNN
+F 1 "+3.3V" H 2665 1223 50  0000 C CNN
+F 2 "" H 2650 1050 50  0001 C CNN
+F 3 "" H 2650 1050 50  0001 C CNN
+	1    2650 1050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2650 1050 2    39   Input ~ 0
+esp32_3.3
+Text GLabel 1600 1400 0    39   Input ~ 0
+esp32_en
+Text GLabel 1600 1600 0    39   Input ~ 0
+esp32_sens_vp
+Text GLabel 1600 1700 0    39   Input ~ 0
+esp32_sens_vn
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 60FA4DA3
+P 4000 3100
+F 0 "JP2" H 4000 3312 50  0000 C CNN
+F 1 "serTX" H 4000 3221 50  0000 C CNN
+F 2 "" H 4000 3100 50  0001 C CNN
+F 3 "~" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 60FA5BE1
+P 4000 3400
+F 0 "JP3" H 4000 3612 50  0000 C CNN
+F 1 "serRX" H 4000 3521 50  0000 C CNN
+F 2 "" H 4000 3400 50  0001 C CNN
+F 3 "~" H 4000 3400 50  0001 C CNN
+	1    4000 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 3100 0    39   Input ~ 0
+SERIAL3_TX
+Text GLabel 3900 3400 0    39   Input ~ 0
+SERIAL3_RX
+Text GLabel 4100 3100 2    39   Input ~ 0
+esp32_iotxd0
+Text GLabel 4100 3400 2    39   Input ~ 0
+esp32_iorxd0
+Text GLabel 2800 3600 2    39   Input ~ 0
+esp32_io34
+Text GLabel 2800 3700 2    39   Input ~ 0
+esp32_io35
+Text GLabel 2800 3400 2    39   Input ~ 0
+esp32_io32
+Text GLabel 2800 3500 2    39   Input ~ 0
+esp32_io33
+Text GLabel 2800 3100 2    39   Input ~ 0
+esp32_io25
+Text GLabel 2800 3200 2    39   Input ~ 0
+esp32_io26
+Text GLabel 2800 3300 2    39   Input ~ 0
+esp32_io27
+Text GLabel 2800 2200 2    39   Input ~ 0
+esp32_io14
+Text GLabel 2800 2000 2    39   Input ~ 0
+esp32_io12
+Text GLabel 2800 2100 2    39   Input ~ 0
+esp32_io13
+Text GLabel 1600 2800 0    39   Input ~ 0
+esp32_sd2
+Text GLabel 1600 2900 0    39   Input ~ 0
+esp32_sd3
+Text GLabel 1600 3000 0    39   Input ~ 0
+esp32_clk
+Text GLabel 1600 2600 0    39   Input ~ 0
+esp32_sd0
+Text GLabel 1600 2700 0    39   Input ~ 0
+esp32_sd1
+Text GLabel 2800 2300 2    39   Input ~ 0
+esp32_io15
+Text GLabel 2800 1600 2    39   Input ~ 0
+esp32_io2
+Text GLabel 2800 1400 2    39   Input ~ 0
+esp32_io0
+Text GLabel 2800 1800 2    39   Input ~ 0
+esp32_io4
+Text GLabel 2800 2400 2    39   Input ~ 0
+esp32_io16
+Text GLabel 2800 2500 2    39   Input ~ 0
+esp32_io17
+Text GLabel 2800 1900 2    39   Input ~ 0
+esp32_io5
+Text GLabel 2800 2600 2    39   Input ~ 0
+esp32_io18
+Text GLabel 2800 2700 2    39   Input ~ 0
+esp32_io19
+Text GLabel 2800 2800 2    39   Input ~ 0
+esp32_io21
+Text GLabel 2800 2900 2    39   Input ~ 0
+esp32_io22
+Text GLabel 2800 3000 2    39   Input ~ 0
+esp32_io23
+Text GLabel 1600 3100 0    39   Input ~ 0
+esp32_cmd
 $EndSCHEMATC
