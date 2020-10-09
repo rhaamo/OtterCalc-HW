@@ -22,7 +22,7 @@ AR Path="/5F7C29DF/60D3B0BB" Ref="J?"  Part="1"
 AR Path="/60CFD8F5/60D3B0BB" Ref="J1"  Part="1" 
 F 0 "J1" H 1157 4867 50  0000 C CNN
 F 1 "USB_B_Mini" H 1157 4776 50  0000 C CNN
-F 2 "" H 1250 4350 50  0001 C CNN
+F 2 "Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal" H 1250 4350 50  0001 C CNN
 F 3 "~" H 1250 4350 50  0001 C CNN
 	1    1100 4400
 	1    0    0    -1  
@@ -36,7 +36,7 @@ AR Path="/5F7C29DF/60D3B0C1" Ref="U?"  Part="1"
 AR Path="/60CFD8F5/60D3B0C1" Ref="U4"  Part="1" 
 F 0 "U4" H 7300 1692 50  0000 C CNN
 F 1 "LP38691SD-3.3" H 7300 1601 50  0000 C CNN
-F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 7300 1350 50  0001 C CNN
+F 2 "Package_SON:WSON-6-1EP_3x3mm_P0.95mm" H 7300 1350 50  0001 C CNN
 F 3 "https://www.nxp.com/docs/en/data-sheet/K66P144M180SF5V2.pdf" H 7300 1350 50  0001 C CNN
 	1    7300 1350
 	1    0    0    -1  
@@ -487,7 +487,7 @@ AR Path="/5F7C29DF/60D3B2BA" Ref="U?"  Part="1"
 AR Path="/60CFD8F5/60D3B2BA" Ref="U1"  Part="1" 
 F 0 "U1" V 3150 4300 50  0000 L CNN
 F 1 "USBLC6-2SC6" V 2150 4150 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2650 3950 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2650 3950 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 2850 4800 50  0001 C CNN
 	1    2650 4450
 	0    1    -1   0   
@@ -616,7 +616,7 @@ AR Path="/5F7C29DF/60D3B4D3" Ref="U?"  Part="1"
 AR Path="/60CFD8F5/60D3B4D3" Ref="U2"  Part="1" 
 F 0 "U2" H 6725 3751 39  0000 C CNN
 F 1 "BQ24190" H 6725 3676 39  0000 C CNN
-F 2 "" H 5700 3950 39  0001 C CNN
+F 2 "Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias" H 5700 3950 39  0001 C CNN
 F 3 "" H 5700 3950 39  0001 C CNN
 	1    6750 3650
 	1    0    0    -1  
@@ -846,7 +846,7 @@ AR Path="/5F7C29DF/60D3B545" Ref="BT?"  Part="1"
 AR Path="/60CFD8F5/60D3B545" Ref="BT2"  Part="1" 
 F 0 "BT2" V 8555 4700 50  0000 C CNN
 F 1 "Battery_Cell" V 8464 4700 50  0000 C CNN
-F 2 "" V 8300 4710 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" V 8300 4710 50  0001 C CNN
 F 3 "~" V 8300 4710 50  0001 C CNN
 	1    8300 4650
 	0    -1   -1   0   
