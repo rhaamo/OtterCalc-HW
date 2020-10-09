@@ -1070,4 +1070,6 @@ Wire Wire Line
 Connection ~ 1800 10900
 Text GLabel 6250 5050 0    39   Input ~ 0
 OTG_EN
+Text GLabel 8000 4650 3    39   Input ~ 0
+BQ_BATP
 $EndSCHEMATC
