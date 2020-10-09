@@ -33,6 +33,7 @@ F 0 "J3" H 1800 6817 50  0000 C CNN
 F 1 "uSD" H 1800 6726 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 3000 6400 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1850 6100 50  0001 C CNN
+F 4 "710-693072010801" H 1850 6100 50  0001 C CNN "mouser"
 	1    1850 6100
 	-1   0    0    1   
 $EndComp
