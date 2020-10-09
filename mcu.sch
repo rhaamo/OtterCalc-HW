@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Crystal Y1
-U 1 1 5F7C8337
-P 12000 3600
-F 0 "Y1" H 12000 3868 50  0000 C CNN
-F 1 "25 MHz" H 12000 3777 50  0000 C CNN
-F 2 "" H 12000 3600 50  0001 C CNN
-F 3 "~" H 12000 3600 50  0001 C CNN
-	1    12000 3600
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:Crystal Y2
 U 1 1 5F7C868F
 P 15950 7000
@@ -32,6 +21,7 @@ F 0 "Y2" H 15950 7268 50  0000 C CNN
 F 1 "32.768 kHz" H 15950 7177 50  0000 C CNN
 F 2 "" H 15950 7000 50  0001 C CNN
 F 3 "~" H 15950 7000 50  0001 C CNN
+F 4 "815-ABS0716632.768KT" H 15950 7000 50  0001 C CNN "mouser"
 	1    15950 7000
 	0    -1   -1   0   
 $EndComp
@@ -526,28 +516,6 @@ Text Label 15100 6950 0    39   ~ 0
 OSC32_IN
 Text Label 15100 7050 0    39   ~ 0
 OSC32_OUT
-Text Notes 15650 6700 0    39   ~ 0
-xtal with\nintegrated\ncaps
-Text Label 12450 3550 0    39   ~ 0
-OSC_IN
-Text Label 12450 3650 0    39   ~ 0
-OSC_OUT
-Wire Wire Line
-	12750 3650 12300 3650
-Wire Wire Line
-	12300 3650 12300 3800
-Wire Wire Line
-	12300 3800 12000 3800
-Wire Wire Line
-	12000 3800 12000 3750
-Wire Wire Line
-	12000 3450 12000 3400
-Wire Wire Line
-	12000 3400 12300 3400
-Wire Wire Line
-	12300 3400 12300 3550
-Wire Wire Line
-	12300 3550 12750 3550
 Text GLabel 14500 1950 1    50   Input ~ 0
 VUSB
 Text Notes 14150 3300 0    39   ~ 0
@@ -1195,7 +1163,7 @@ Wire Wire Line
 Text GLabel 12750 2350 0    50   Input ~ 0
 BOOT0
 Text Notes 600  11100 0    98   ~ 0
-TODO to validate:\n- BOOT0 behavior\n- WAKEUP through ON behavior\n- RESET\n- caps for stm32 25MHz xtal
+TODO to validate:\n- BOOT0 behavior\n- WAKEUP through ON behavior\n- RESET
 Text GLabel 4800 9350 0    50   Input ~ 0
 KB_ROW_11
 $Comp
@@ -1504,52 +1472,6 @@ Connection ~ 10900 1850
 Connection ~ 10600 1850
 Wire Wire Line
 	10600 1850 10900 1850
-$Comp
-L Device:C_Small C29
-U 1 1 602A0B0B
-P 11900 3400
-F 0 "C29" V 12129 3400 50  0000 C CNN
-F 1 "10pF" V 12038 3400 50  0000 C CNN
-F 2 "" H 11900 3400 50  0001 C CNN
-F 3 "~" H 11900 3400 50  0001 C CNN
-	1    11900 3400
-	0    -1   -1   0   
-$EndComp
-Connection ~ 12000 3400
-$Comp
-L Device:C_Small C30
-U 1 1 602A1326
-P 11900 3800
-F 0 "C30" V 11700 3800 50  0000 C CNN
-F 1 "10pF" V 11800 3800 50  0000 C CNN
-F 2 "" H 11900 3800 50  0001 C CNN
-F 3 "~" H 11900 3800 50  0001 C CNN
-	1    11900 3800
-	0    -1   -1   0   
-$EndComp
-Connection ~ 12000 3800
-$Comp
-L power:GND #PWR0140
-U 1 1 602A1994
-P 11800 3400
-F 0 "#PWR0140" H 11800 3150 50  0001 C CNN
-F 1 "GND" H 11805 3227 50  0000 C CNN
-F 2 "" H 11800 3400 50  0001 C CNN
-F 3 "" H 11800 3400 50  0001 C CNN
-	1    11800 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0141
-U 1 1 602A2015
-P 11800 3800
-F 0 "#PWR0141" H 11800 3550 50  0001 C CNN
-F 1 "GND" H 11805 3627 50  0000 C CNN
-F 2 "" H 11800 3800 50  0001 C CNN
-F 3 "" H 11800 3800 50  0001 C CNN
-	1    11800 3800
-	0    1    1    0   
-$EndComp
 Text Notes 11550 4200 0    39   ~ 0
 validate caps against\nchoosen xtal
 $Comp
@@ -2522,4 +2444,98 @@ F 3 "~" H 8250 3850 50  0001 C CNN
 	1    8050 3850
 	-1   0    0    1   
 $EndComp
+Text Notes 15650 6700 0    39   ~ 0
+ABS07-166-32.768KHZ-T
+$Comp
+L Oscillator:ASDMB-xxxMHz U8
+U 1 1 60FEB22A
+P 10600 2950
+F 0 "U8" H 11044 2996 50  0000 L CNN
+F 1 "ASDMB-25.000MHZ-LC-T" H 10100 2500 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Abracon_ASDMB-4Pin_2.5x2.0mm" H 10600 2950 50  0001 C CNN
+F 3 "https://abracon.com/Oscillators/ASDMB.pdf" H 10900 3400 50  0001 C CNN
+	1    10600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R25
+U 1 1 60FEC7BE
+P 10000 2950
+F 0 "R25" V 10196 2950 50  0000 C CNN
+F 1 "10k" V 10105 2950 50  0000 C CNN
+F 2 "" H 10000 2950 50  0001 C CNN
+F 3 "~" H 10000 2950 50  0001 C CNN
+	1    10000 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 60FED86D
+P 9850 3150
+F 0 "C29" H 9942 3196 50  0000 L CNN
+F 1 "100nF" H 9942 3105 50  0000 L CNN
+F 2 "" H 9850 3150 50  0001 C CNN
+F 3 "~" H 9850 3150 50  0001 C CNN
+	1    9850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR045
+U 1 1 60FEF86B
+P 9850 2650
+F 0 "#PWR045" H 9850 2500 50  0001 C CNN
+F 1 "+3.3V" H 9865 2823 50  0000 C CNN
+F 2 "" H 9850 2650 50  0001 C CNN
+F 3 "" H 9850 2650 50  0001 C CNN
+	1    9850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 60FEFF10
+P 9850 3250
+F 0 "#PWR046" H 9850 3000 50  0001 C CNN
+F 1 "GND" H 9855 3077 50  0000 C CNN
+F 2 "" H 9850 3250 50  0001 C CNN
+F 3 "" H 9850 3250 50  0001 C CNN
+	1    9850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3250 9850 3250
+Connection ~ 9850 3250
+Wire Wire Line
+	9850 3050 9850 2950
+Wire Wire Line
+	9900 2950 9850 2950
+Connection ~ 9850 2950
+Wire Wire Line
+	9850 2950 9850 2650
+Wire Wire Line
+	10700 2650 9850 2650
+Connection ~ 9850 2650
+Wire Wire Line
+	10100 2950 10200 2950
+$Comp
+L Device:R_Small R26
+U 1 1 61011743
+P 12200 3550
+F 0 "R26" V 12004 3550 50  0000 C CNN
+F 1 "100" V 12095 3550 50  0000 C CNN
+F 2 "" H 12200 3550 50  0001 C CNN
+F 3 "~" H 12200 3550 50  0001 C CNN
+	1    12200 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12300 3550 12750 3550
+Wire Wire Line
+	12100 3550 11650 3550
+Wire Wire Line
+	11650 3550 11650 2950
+Wire Wire Line
+	11650 2950 11000 2950
+Text Label 11250 2950 0    39   ~ 0
+OSC_25M
+NoConn ~ 12750 3650
 $EndSCHEMATC
