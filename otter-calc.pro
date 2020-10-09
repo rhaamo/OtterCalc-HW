@@ -1,4 +1,4 @@
-update=22/05/2015 07:44:53
+update=ven. 09 oct. 2020 22:41:04
 version=1
 last_client=kicad
 [general]
@@ -31,3 +31,13 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=39
+ERC_TestSimilarLabels=1
