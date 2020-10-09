@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name otter-calc-rescue)(type Legacy)(uri ${KIPRJMOD}/otter-calc-rescue.lib)(options "")(descr ""))
+  (lib (name d_mps)(type Legacy)(uri ${KIPRJMOD}/KiCad_libraries/d_mps.lib)(options "")(descr ""))
+  (lib (name d_st)(type Legacy)(uri ${KIPRJMOD}/KiCad_libraries/d_st.lib)(options "")(descr ""))
+  (lib (name d_ti)(type Legacy)(uri ${KIPRJMOD}/KiCad_libraries/d_ti.lib)(options "")(descr ""))
 )

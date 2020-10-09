@@ -1,6 +1,14 @@
 # Otter Calc
 
-## Requirements (kicad)
+## Requirements
+- KiCad >=5.1
 
-- https://dev.sigpipe.me/DashieElectronics/KiCad_libraries (global)
+## Checkout
+
+```
+git clone https://github.com/rhaamo/OtterCalc-HW
+cd OtterCalc-HW
+git submodule init
+git submodule update
+```
 

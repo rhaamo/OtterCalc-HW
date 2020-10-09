@@ -1,0 +1,3 @@
+[submodule "KiCad_libraries"]
+	path = KiCad_libraries
+	url = https://dev.sigpipe.me/DashieElectronics/KiCad_libraries
