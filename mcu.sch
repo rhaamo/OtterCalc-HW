@@ -1059,7 +1059,7 @@ KB_ROW_9
 Text GLabel 12750 7350 0    50   Input ~ 0
 KB_ROW_10
 Text GLabel 15050 2150 2    50   Input ~ 0
-KB_ON
+KB_WAKEUP
 Text Notes 3750 10750 0    118  ~ 0
 PWR On button is KB_COL_1 / KB_ROW_11\nESC button is KB_COL_12 / KB_ROW_1
 Text GLabel 3000 9050 0    50   Input ~ 0
@@ -1123,8 +1123,6 @@ Text GLabel 12750 2350 0    50   Input ~ 0
 BOOT0
 Text Notes 600  11100 0    98   ~ 0
 TODO to validate:\n- BOOT0 behavior\n- WAKEUP through ON behavior\n- RESET
-Text Notes 15050 2100 0    50   ~ 0
-see notes\nfor PWR ON
 Text Notes 15500 4300 0    39   ~ 0
 TIM3_CH1
 Text Notes 3750 11050 0    79   ~ 0
@@ -2624,72 +2622,85 @@ Wire Wire Line
 	10700 10500 11750 10500
 Text Notes 10550 10900 0    39   ~ 0
 R VF=1.8-2.4 FC=30\nG VF=2.8-3.9 FC=20\nB VF=2.8-3.9 FC=20\nSupply=3.3
-Text GLabel 10750 1050 2    50   Input ~ 0
-KB_ON
+Text GLabel 11350 1450 2    50   Input ~ 0
+KB_WAKEUP
 $Comp
 L Switch:SW_Push SW7
 U 1 1 5F9751F4
-P 10150 1050
-F 0 "SW7" H 10150 1335 50  0000 C CNN
-F 1 "on" H 10150 1244 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 10150 1250 50  0001 C CNN
-F 3 "~" H 10150 1250 50  0001 C CNN
-	1    10150 1050
+P 10350 1450
+F 0 "SW7" H 10350 1735 50  0000 C CNN
+F 1 "on" H 10350 1644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 10350 1650 50  0001 C CNN
+F 3 "~" H 10350 1650 50  0001 C CNN
+	1    10350 1450
 	1    0    0    -1  
+$EndComp
+Text Notes 9650 3500 0    59   ~ 0
+internal i2c:\n6BH - Battery charger\nBA/BB or 28/29 - Touch display\n20 - Keyboard matrix output
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 5FA49B5B
+P 10000 1450
+F 0 "#PWR0111" H 10000 1300 50  0001 C CNN
+F 1 "+3.3V" V 10015 1578 50  0000 L CNN
+F 2 "" H 10000 1450 50  0001 C CNN
+F 3 "" H 10000 1450 50  0001 C CNN
+	1    10000 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C41
+U 1 1 5FA4B68A
+P 10050 1000
+F 0 "C41" H 9935 954 50  0000 R CNN
+F 1 "100nF" H 9935 1045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10088 850 50  0001 C CNN
+F 3 "~" H 10050 1000 50  0001 C CNN
+	1    10050 1000
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R26
-U 1 1 5F97E218
-P 10550 900
-F 0 "R26" H 10620 946 50  0000 L CNN
-F 1 "100k" H 10620 855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10480 900 50  0001 C CNN
-F 3 "~" H 10550 900 50  0001 C CNN
-	1    10550 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 1050 10550 1050
-Connection ~ 10550 1050
-Wire Wire Line
-	10550 1050 10750 1050
-$Comp
-L power:GND #PWR0111
-U 1 1 5F98559E
-P 10550 750
-F 0 "#PWR0111" H 10550 500 50  0001 C CNN
-F 1 "GND" H 10555 577 50  0000 C CNN
-F 2 "" H 10550 750 50  0001 C CNN
-F 3 "" H 10550 750 50  0001 C CNN
-	1    10550 750 
+U 1 1 5FA5B33C
+P 10700 1000
+F 0 "R26" H 10630 954 50  0000 R CNN
+F 1 "10k" H 10630 1045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10630 1000 50  0001 C CNN
+F 3 "~" H 10700 1000 50  0001 C CNN
+	1    10700 1000
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R9
-U 1 1 5F987D50
-P 9800 900
-F 0 "R9" H 9870 946 50  0000 L CNN
-F 1 "10k" H 9870 855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9730 900 50  0001 C CNN
-F 3 "~" H 9800 900 50  0001 C CNN
-	1    9800 900 
-	1    0    0    -1  
+U 1 1 5FA5CDAE
+P 10350 750
+F 0 "R9" V 10143 750 50  0000 C CNN
+F 1 "10k" V 10234 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10280 750 50  0001 C CNN
+F 3 "~" H 10350 750 50  0001 C CNN
+	1    10350 750 
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9800 1050 9950 1050
-$Comp
-L power:+3.3V #PWR0125
-U 1 1 5F98FA73
-P 9800 750
-F 0 "#PWR0125" H 9800 600 50  0001 C CNN
-F 1 "+3.3V" H 9815 923 50  0000 C CNN
-F 2 "" H 9800 750 50  0001 C CNN
-F 3 "" H 9800 750 50  0001 C CNN
-	1    9800 750 
-	1    0    0    -1  
-$EndComp
-Text Notes 9750 1350 0    50   ~ 0
-In stdby, KB_ON is configured as WKUP waiting for rising edge.\nPull down set it to zero by default.\nWhen pressed, KB_ON is connected to 3.3V generating a rising edge.
-Text Notes 9650 3500 0    59   ~ 0
-internal i2c:\n6BH - Battery charger\nBA/BB or 28/29 - Touch display\n20 - Keyboard matrix output
+	10000 1450 10050 1450
+Wire Wire Line
+	10550 1450 10700 1450
+Wire Wire Line
+	10500 750  10700 750 
+Wire Wire Line
+	10700 750  10700 850 
+Wire Wire Line
+	10700 1150 10700 1450
+Connection ~ 10700 1450
+Wire Wire Line
+	10700 1450 11350 1450
+Wire Wire Line
+	10050 1450 10050 1150
+Connection ~ 10050 1450
+Wire Wire Line
+	10050 1450 10150 1450
+Wire Wire Line
+	10050 850  10050 750 
+Wire Wire Line
+	10050 750  10200 750 
 $EndSCHEMATC
