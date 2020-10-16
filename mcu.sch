@@ -1010,34 +1010,6 @@ F 3 "" H 4950 8750 50  0001 C CNN
 	1    4950 8750
 	1    0    0    -1  
 $EndComp
-Text GLabel 12750 8250 0    50   Input ~ 0
-KB_COL_10
-Text GLabel 12750 6750 0    50   Input ~ 0
-KB_COL_9
-Text GLabel 15050 3950 2    50   Input ~ 0
-KB_COL_8
-Text GLabel 15050 6050 2    50   Input ~ 0
-KB_COL_7
-Text GLabel 15050 5950 2    50   Input ~ 0
-KB_COL_6
-Text GLabel 15050 5850 2    50   Input ~ 0
-KB_COL_5
-Text GLabel 12750 7550 0    50   Input ~ 0
-KB_COL_4
-Text GLabel 12750 6050 0    50   Input ~ 0
-KB_COL_3
-Text GLabel 12750 5950 0    50   Input ~ 0
-KB_COL_2
-Text GLabel 12750 5850 0    50   Input ~ 0
-KB_COL_1
-Text GLabel 15050 8650 2    50   Input ~ 0
-KB_COL_11
-Text GLabel 15050 8750 2    50   Input ~ 0
-KB_COL_12
-Text GLabel 15050 5250 2    50   Input ~ 0
-KB_COL_13
-Text GLabel 15050 5350 2    50   Input ~ 0
-KB_COL_14
 Text GLabel 12750 4650 0    50   Input ~ 0
 KB_ROW_8
 Text GLabel 12750 4450 0    50   Input ~ 0
@@ -1128,53 +1100,25 @@ TIM3_CH1
 Text Notes 3750 11050 0    79   ~ 0
 COL are inputs, pull-up sw\nROW output
 Text Notes 13050 3900 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 4000 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 4100 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 4200 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 4300 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 4400 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 4500 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 7300 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 4700 0    39   ~ 0
-keyboard row out
+keyboard row in
 Text Notes 13050 7400 0    39   ~ 0
-keyboard row out
-Text Notes 13100 5900 0    39   ~ 0
-keyboard col in
-Text Notes 13100 6000 0    39   ~ 0
-keyboard col in
-Text Notes 13100 6100 0    39   ~ 0
-keyboard col in
-Text Notes 14300 4000 0    39   ~ 0
-keyboard col in
-Text Notes 13100 6800 0    39   ~ 0
-keyboard col in
-Text Notes 14250 5300 0    39   ~ 0
-keyboard col in
-Text Notes 14250 5400 0    39   ~ 0
-keyboard col in
-Text Notes 14300 5900 0    39   ~ 0
-keyboard col in
-Text Notes 14250 8700 0    39   ~ 0
-keyboard col in
-Text Notes 14300 6000 0    39   ~ 0
-keyboard col in
-Text Notes 14300 6100 0    39   ~ 0
-keyboard col in
-Text Notes 14250 8800 0    39   ~ 0
-keyboard col in
-Text Notes 13100 7600 0    39   ~ 0
-keyboard col in
-Text Notes 13100 8300 0    39   ~ 0
-keyboard col in
+keyboard row in
 Text GLabel 12750 4750 0    39   Input ~ 0
 SERIAL3_RX
 Text Notes 13050 4800 0    39   ~ 0
@@ -2703,4 +2647,18 @@ Wire Wire Line
 	10050 850  10050 750 
 Wire Wire Line
 	10050 750  10200 750 
+NoConn ~ 15050 5250
+NoConn ~ 15050 5350
+NoConn ~ 15050 5850
+NoConn ~ 15050 5950
+NoConn ~ 15050 6050
+NoConn ~ 12750 5850
+NoConn ~ 12750 5950
+NoConn ~ 12750 6050
+NoConn ~ 12750 7550
+NoConn ~ 12750 8250
+NoConn ~ 15050 8650
+NoConn ~ 15050 8750
+NoConn ~ 15050 3950
+NoConn ~ 12750 6750
 $EndSCHEMATC
