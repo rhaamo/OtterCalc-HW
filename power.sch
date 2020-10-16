@@ -446,6 +446,7 @@ F 0 "U1" V 3150 4300 50  0000 L CNN
 F 1 "USBLC6-2SC6" V 2150 4150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2650 3950 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 2850 4800 50  0001 C CNN
+F 4 "C7519" H 2650 4450 50  0001 C CNN "lcsc"
 	1    2650 4450
 	0    1    -1   0   
 $EndComp

@@ -763,6 +763,7 @@ F 0 "U3" H 8744 9096 50  0000 L CNN
 F 1 "AT25SF641" H 8744 9005 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8100 8450 50  0001 C CNN
 F 3 "https://www.adestotech.com/wp-content/uploads/DS-AT25SF081_045.pdf" H 8100 9050 50  0001 C CNN
+F 4 "C161772" H 8100 9050 50  0001 C CNN "lcsc"
 	1    8100 9050
 	1    0    0    -1  
 $EndComp
@@ -1058,7 +1059,7 @@ KB_ROW_9
 Text GLabel 12750 7350 0    50   Input ~ 0
 KB_ROW_10
 Text GLabel 15050 2150 2    50   Input ~ 0
-KB_ROW_11
+KB_ON
 Text Notes 3750 10750 0    118  ~ 0
 PWR On button is KB_COL_1 / KB_ROW_11\nESC button is KB_COL_12 / KB_ROW_1
 Text GLabel 3000 9050 0    50   Input ~ 0
@@ -1122,32 +1123,6 @@ Text GLabel 12750 2350 0    50   Input ~ 0
 BOOT0
 Text Notes 600  11100 0    98   ~ 0
 TODO to validate:\n- BOOT0 behavior\n- WAKEUP through ON behavior\n- RESET
-Text GLabel 4800 9350 0    50   Input ~ 0
-KB_ROW_11
-$Comp
-L Device:R R9
-U 1 1 5FF2A539
-P 4950 9350
-F 0 "R9" V 4743 9350 50  0000 C CNN
-F 1 "100k" V 4834 9350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4880 9350 50  0001 C CNN
-F 3 "~" H 4950 9350 50  0001 C CNN
-	1    4950 9350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0125
-U 1 1 5FF2B25B
-P 5100 9350
-F 0 "#PWR0125" H 5100 9100 50  0001 C CNN
-F 1 "GND" V 5105 9222 50  0000 R CNN
-F 2 "" H 5100 9350 50  0001 C CNN
-F 3 "" H 5100 9350 50  0001 C CNN
-	1    5100 9350
-	0    -1   -1   0   
-$EndComp
-Text Notes 3950 9800 0    50   ~ 0
-In stdby, KB_ROW_1 is configured as WKUP waiting for rising edge.\nPull down set it to zero by default.\nWhen pressed, KB_ROW_1 is connected to KB_COL_3 which has\n10k pull-up which is stronger than the pull-down, generating a rising edge.
 Text Notes 15050 2100 0    50   ~ 0
 see notes\nfor PWR ON
 Text Notes 15500 4300 0    39   ~ 0
@@ -1633,6 +1608,7 @@ F 0 "U6" H 8850 6387 60  0000 C CNN
 F 1 "MP3302DJ-LF-P" H 8850 6281 60  0000 C CNN
 F 2 "d_mps:MP3302DJ-LF-P" H 8850 6240 60  0001 C CNN
 F 3 "" H 8050 6000 60  0000 C CNN
+F 4 "C15035" H 8050 6000 50  0001 C CNN "lcsc"
 	1    8050 6000
 	-1   0    0    -1  
 $EndComp
@@ -2368,6 +2344,7 @@ F 0 "U5" H 13900 -500 157 0000 C CNN
 F 1 "STM32F750Z8" H 13900 3250 157 0000 C CNN
 F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 13800 2200 157 0001 C CNN
 F 3 "" H 13800 2200 157 0001 C CNN
+F 4 "C411817" H 13900 2050 50  0001 C CNN "lcsc"
 	1    13900 2050
 	1    0    0    -1  
 $EndComp
@@ -2647,4 +2624,72 @@ Wire Wire Line
 	10700 10500 11750 10500
 Text Notes 10550 10900 0    39   ~ 0
 R VF=1.8-2.4 FC=30\nG VF=2.8-3.9 FC=20\nB VF=2.8-3.9 FC=20\nSupply=3.3
+Text GLabel 10750 1050 2    50   Input ~ 0
+KB_ON
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5F9751F4
+P 10150 1050
+F 0 "SW7" H 10150 1335 50  0000 C CNN
+F 1 "on" H 10150 1244 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 10150 1250 50  0001 C CNN
+F 3 "~" H 10150 1250 50  0001 C CNN
+	1    10150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5F97E218
+P 10550 900
+F 0 "R26" H 10620 946 50  0000 L CNN
+F 1 "100k" H 10620 855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10480 900 50  0001 C CNN
+F 3 "~" H 10550 900 50  0001 C CNN
+	1    10550 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1050 10550 1050
+Connection ~ 10550 1050
+Wire Wire Line
+	10550 1050 10750 1050
+$Comp
+L power:GND #PWR0111
+U 1 1 5F98559E
+P 10550 750
+F 0 "#PWR0111" H 10550 500 50  0001 C CNN
+F 1 "GND" H 10555 577 50  0000 C CNN
+F 2 "" H 10550 750 50  0001 C CNN
+F 3 "" H 10550 750 50  0001 C CNN
+	1    10550 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5F987D50
+P 9800 900
+F 0 "R9" H 9870 946 50  0000 L CNN
+F 1 "10k" H 9870 855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9730 900 50  0001 C CNN
+F 3 "~" H 9800 900 50  0001 C CNN
+	1    9800 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1050 9950 1050
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 5F98FA73
+P 9800 750
+F 0 "#PWR0125" H 9800 600 50  0001 C CNN
+F 1 "+3.3V" H 9815 923 50  0000 C CNN
+F 2 "" H 9800 750 50  0001 C CNN
+F 3 "" H 9800 750 50  0001 C CNN
+	1    9800 750 
+	1    0    0    -1  
+$EndComp
+Text Notes 9750 1350 0    50   ~ 0
+In stdby, KB_ON is configured as WKUP waiting for rising edge.\nPull down set it to zero by default.\nWhen pressed, KB_ON is connected to 3.3V generating a rising edge.
+Text Notes 9650 3500 0    59   ~ 0
+internal i2c:\n6BH - Battery charger\nBA/BB or 28/29 - Touch display\n20 - Keyboard matrix output
 $EndSCHEMATC
