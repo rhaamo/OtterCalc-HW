@@ -129,9 +129,9 @@ KB_COL_14
 NoConn ~ 3500 7300
 NoConn ~ 3500 7400
 Text GLabel 2100 5800 0    39   Input ~ 0
-BAT_SDA
+INT_SDA
 Text GLabel 2100 5900 0    39   Input ~ 0
-BAT_SCL
+INT_SCL
 $Comp
 L power:GND #PWR0130
 U 1 1 5F97902E
@@ -2805,9 +2805,9 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5400 5500 
 	1    0    0    -1  
 $EndComp
 Text GLabel 4500 5800 0    39   Input ~ 0
-BAT_SDA
+INT_SDA
 Text GLabel 4500 5900 0    39   Input ~ 0
-BAT_SCL
+INT_SCL
 NoConn ~ 4500 6400
 NoConn ~ 4500 6500
 $Comp

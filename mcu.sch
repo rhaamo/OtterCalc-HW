@@ -486,7 +486,7 @@ Text Notes 14150 3200 0    39   ~ 0
 PA10 - OTG_FS_ID
 Text GLabel 15050 3150 2    50   Input ~ 0
 USB0_ID
-Text GLabel 10300 6100 0    39   Input ~ 0
+Text GLabel 10150 7100 0    39   Input ~ 0
 LCD_PENIRQ
 Text GLabel 11000 7350 0    39   Input ~ 0
 LCD_R0
@@ -524,7 +524,7 @@ Text GLabel 11000 4650 0    39   Input ~ 0
 LCD_HSYNC
 Text GLabel 11000 4450 0    39   Input ~ 0
 LCD_DE
-Text GLabel 10300 6400 0    39   Input ~ 0
+Text GLabel 10150 7400 0    39   Input ~ 0
 LCD_TOUCH_RST
 Text GLabel 11000 6650 0    39   Input ~ 0
 LCD_R7
@@ -549,12 +549,12 @@ LCD_VSYNC
 $Comp
 L power:GND #PWR0112
 U 1 1 5F98FFD8
-P 9950 6500
-F 0 "#PWR0112" H 9950 6250 50  0001 C CNN
-F 1 "GND" H 9955 6327 50  0000 C CNN
-F 2 "" H 9950 6500 50  0001 C CNN
-F 3 "" H 9950 6500 50  0001 C CNN
-	1    9950 6500
+P 9800 7500
+F 0 "#PWR0112" H 9800 7250 50  0001 C CNN
+F 1 "GND" H 9805 7327 50  0000 C CNN
+F 2 "" H 9800 7500 50  0001 C CNN
+F 3 "" H 9800 7500 50  0001 C CNN
+	1    9800 7500
 	0    1    1    0   
 $EndComp
 Text Notes 13100 5200 0    39   ~ 0
@@ -1155,9 +1155,9 @@ JTDI
 Text GLabel 15050 4150 2    39   Input ~ 0
 JTDO
 Text GLabel 12750 7050 0    39   Input ~ 0
-BAT_SDA
+INT_SDA
 Text GLabel 12750 6950 0    39   Input ~ 0
-BAT_SCL
+INT_SCL
 Text GLabel 12750 6850 0    39   Input ~ 0
 BAT_INT
 Text Notes 13100 7100 0    39   ~ 0
@@ -1307,29 +1307,29 @@ $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 60511AFC
-P 10450 7550
-F 0 "#PWR022" H 10450 7300 50  0001 C CNN
-F 1 "GND" H 10455 7377 50  0000 C CNN
-F 2 "" H 10450 7550 50  0001 C CNN
-F 3 "" H 10450 7550 50  0001 C CNN
-	1    10450 7550
+P 10900 7550
+F 0 "#PWR022" H 10900 7300 50  0001 C CNN
+F 1 "GND" H 10905 7377 50  0000 C CNN
+F 2 "" H 10900 7550 50  0001 C CNN
+F 3 "" H 10900 7550 50  0001 C CNN
+	1    10900 7550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10450 7550 11000 7550
+	10900 7550 11000 7550
 $Comp
 L power:+3.3V #PWR021
 U 1 1 6051DAFC
-P 10350 7450
-F 0 "#PWR021" H 10350 7300 50  0001 C CNN
-F 1 "+3.3V" H 10365 7623 50  0000 C CNN
-F 2 "" H 10350 7450 50  0001 C CNN
-F 3 "" H 10350 7450 50  0001 C CNN
-	1    10350 7450
+P 10800 7450
+F 0 "#PWR021" H 10800 7300 50  0001 C CNN
+F 1 "+3.3V" H 10815 7623 50  0000 C CNN
+F 2 "" H 10800 7450 50  0001 C CNN
+F 3 "" H 10800 7450 50  0001 C CNN
+	1    10800 7450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10350 7450 11000 7450
+	10800 7450 11000 7450
 $Comp
 L power:GND #PWR026
 U 1 1 60558D57
@@ -1388,60 +1388,60 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x08 J7
 U 1 1 605D39D8
-P 10500 6200
-F 0 "J7" V 10600 6500 50  0000 C CNN
-F 1 "touch interface" V 10600 6100 50  0000 C CNN
-F 2 "Connector_FFC-FPC:TE_0-1734839-8_1x08-1MP_P0.5mm_Horizontal" H 10500 6200 50  0001 C CNN
-F 3 "~" H 10500 6200 50  0001 C CNN
-	1    10500 6200
+P 10350 7200
+F 0 "J7" V 10450 7500 50  0000 C CNN
+F 1 "touch interface" V 10450 7100 50  0000 C CNN
+F 2 "Connector_FFC-FPC:TE_0-1734839-8_1x08-1MP_P0.5mm_Horizontal" H 10350 7200 50  0001 C CNN
+F 3 "~" H 10350 7200 50  0001 C CNN
+	1    10350 7200
 	1    0    0    1   
 $EndComp
 $Comp
 L power:+3.3V #PWR016
 U 1 1 605D4C62
-P 9850 6300
-F 0 "#PWR016" H 9850 6150 50  0001 C CNN
-F 1 "+3.3V" H 9865 6473 50  0000 C CNN
-F 2 "" H 9850 6300 50  0001 C CNN
-F 3 "" H 9850 6300 50  0001 C CNN
-	1    9850 6300
+P 9700 7300
+F 0 "#PWR016" H 9700 7150 50  0001 C CNN
+F 1 "+3.3V" H 9715 7473 50  0000 C CNN
+F 2 "" H 9700 7300 50  0001 C CNN
+F 3 "" H 9700 7300 50  0001 C CNN
+	1    9700 7300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR019
 U 1 1 605D5342
-P 9950 6200
-F 0 "#PWR019" H 9950 5950 50  0001 C CNN
-F 1 "GND" H 9955 6027 50  0000 C CNN
-F 2 "" H 9950 6200 50  0001 C CNN
-F 3 "" H 9950 6200 50  0001 C CNN
-	1    9950 6200
+P 9800 7200
+F 0 "#PWR019" H 9800 6950 50  0001 C CNN
+F 1 "GND" H 9805 7027 50  0000 C CNN
+F 2 "" H 9800 7200 50  0001 C CNN
+F 3 "" H 9800 7200 50  0001 C CNN
+	1    9800 7200
 	0    1    1    0   
 $EndComp
 NoConn ~ 12750 6350
-Text GLabel 10300 5900 0    39   Input ~ 0
-BAT_SCL
-Text GLabel 10300 6000 0    39   Input ~ 0
-BAT_SDA
+Text GLabel 8250 6550 3    39   Input ~ 0
+I2C1_SCL
+Text GLabel 8950 6550 3    39   Input ~ 0
+I2C1_SDA
 $Comp
 L power:GND #PWR018
 U 1 1 6061D658
-P 9950 5800
-F 0 "#PWR018" H 9950 5550 50  0001 C CNN
-F 1 "GND" H 9955 5627 50  0000 C CNN
-F 2 "" H 9950 5800 50  0001 C CNN
-F 3 "" H 9950 5800 50  0001 C CNN
-	1    9950 5800
+P 9800 6800
+F 0 "#PWR018" H 9800 6550 50  0001 C CNN
+F 1 "GND" H 9805 6627 50  0000 C CNN
+F 2 "" H 9800 6800 50  0001 C CNN
+F 3 "" H 9800 6800 50  0001 C CNN
+	1    9800 6800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9950 5800 10300 5800
+	9800 6800 10150 6800
 Wire Wire Line
-	10300 6500 9950 6500
+	10150 7500 9800 7500
 Wire Wire Line
-	9950 6200 10300 6200
+	9800 7200 10150 7200
 Wire Wire Line
-	10300 6300 9850 6300
+	10150 7300 9700 7300
 $Comp
 L d_mps:MP3302DJ-LF-P U6
 U 1 1 6068A7DE
@@ -1744,10 +1744,10 @@ Text GLabel 11000 7750 0    39   Input ~ 0
 VLED-
 Text GLabel 11000 7650 0    39   Input ~ 0
 VLED+
-Text GLabel 7850 6700 2    39   Input ~ 0
+Text GLabel 7950 6700 2    39   Input ~ 0
 VLED-
 Wire Wire Line
-	7850 6700 7750 6700
+	7950 6700 7750 6700
 Wire Wire Line
 	7750 6700 7750 6750
 Wire Wire Line
@@ -2455,7 +2455,7 @@ R VF=1.8-2.4 FC=30\nG VF=2.8-3.9 FC=20\nB VF=2.8-3.9 FC=20\nSupply=3.3
 Text GLabel 10850 1450 2    50   Input ~ 0
 KB_WAKEUP
 Text Notes 9650 3500 0    59   ~ 0
-internal i2c (bat_xxx):\n6BH - Battery charger\nBA/BB or 28/29 - Touch display\n20 - Keyboard matrix columns\n21 - Keyboard matrix rows
+internal i2c (int_xxx):\n6BH - Battery charger\n20 - Keyboard matrix columns\n21 - Keyboard matrix rows\n\nuser i2c (i2c1_xxx):\nBA/BB or 28/29 - Touch display\n          (w/ jumper user or int)
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5FA49B5B
@@ -2649,4 +2649,38 @@ $EndComp
 Connection ~ 6250 6000
 Wire Wire Line
 	6250 6000 5900 6000
+$Comp
+L Jumper:Jumper_3_Bridged12 JP4
+U 1 1 6188C10F
+P 8500 6550
+F 0 "JP4" H 8500 6754 50  0000 C CNN
+F 1 "I2C_SCL_TOUCH" H 8500 6663 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels" H 8500 6550 50  0001 C CNN
+F 3 "~" H 8500 6550 50  0001 C CNN
+	1    8500 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP5
+U 1 1 6188CE27
+P 9200 6550
+F 0 "JP5" H 9200 6754 50  0000 C CNN
+F 1 "I2C_SDA_TOUCH" H 9200 6663 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels" H 9200 6550 50  0001 C CNN
+F 3 "~" H 9200 6550 50  0001 C CNN
+	1    9200 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 6700 8500 6900
+Wire Wire Line
+	8500 6900 10150 6900
+Wire Wire Line
+	9200 6700 9200 7000
+Wire Wire Line
+	9200 7000 10150 7000
+Text GLabel 8750 6550 3    39   Input ~ 0
+BAT_SCL
+Text GLabel 9450 6550 3    39   Input ~ 0
+BAT_SDA
 $EndSCHEMATC

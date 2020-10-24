@@ -495,9 +495,9 @@ Connection ~ 10850 10500
 Text GLabel 1400 4600 2    50   Input ~ 0
 USB0_ID
 Text GLabel 6250 4750 0    39   Input ~ 0
-BAT_SDA
+INT_SDA
 Text GLabel 6250 4850 0    39   Input ~ 0
-BAT_SCL
+INT_SCL
 Text GLabel 6250 4950 0    39   Input ~ 0
 BAT_INT
 Text GLabel 2050 10500 1    39   Input ~ 0
