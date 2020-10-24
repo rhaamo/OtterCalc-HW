@@ -1419,9 +1419,9 @@ F 3 "" H 9800 7200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 12750 6350
-Text GLabel 8250 6550 3    39   Input ~ 0
+Text GLabel 10150 6900 0    39   Input ~ 0
 I2C1_SCL
-Text GLabel 8950 6550 3    39   Input ~ 0
+Text GLabel 10150 7000 0    39   Input ~ 0
 I2C1_SDA
 $Comp
 L power:GND #PWR018
@@ -2455,7 +2455,7 @@ R VF=1.8-2.4 FC=30\nG VF=2.8-3.9 FC=20\nB VF=2.8-3.9 FC=20\nSupply=3.3
 Text GLabel 10850 1450 2    50   Input ~ 0
 KB_WAKEUP
 Text Notes 9650 3500 0    59   ~ 0
-internal i2c (int_xxx):\n6BH - Battery charger\n20 - Keyboard matrix columns\n21 - Keyboard matrix rows\n\nuser i2c (i2c1_xxx):\nBA/BB or 28/29 - Touch display\n          (w/ jumper user or int)
+internal i2c (int_xxx):\n6BH - Battery charger\n20 - Keyboard matrix columns\n21 - Keyboard matrix rows\n\nuser i2c (i2c1_xxx):\nBA/BB or 28/29 - Touch display\n
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5FA49B5B
@@ -2649,38 +2649,4 @@ $EndComp
 Connection ~ 6250 6000
 Wire Wire Line
 	6250 6000 5900 6000
-$Comp
-L Jumper:Jumper_3_Bridged12 JP4
-U 1 1 6188C10F
-P 8500 6550
-F 0 "JP4" H 8500 6754 50  0000 C CNN
-F 1 "I2C_SCL_TOUCH" H 8500 6663 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels" H 8500 6550 50  0001 C CNN
-F 3 "~" H 8500 6550 50  0001 C CNN
-	1    8500 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_3_Bridged12 JP5
-U 1 1 6188CE27
-P 9200 6550
-F 0 "JP5" H 9200 6754 50  0000 C CNN
-F 1 "I2C_SDA_TOUCH" H 9200 6663 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels" H 9200 6550 50  0001 C CNN
-F 3 "~" H 9200 6550 50  0001 C CNN
-	1    9200 6550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 6700 8500 6900
-Wire Wire Line
-	8500 6900 10150 6900
-Wire Wire Line
-	9200 6700 9200 7000
-Wire Wire Line
-	9200 7000 10150 7000
-Text GLabel 8750 6550 3    39   Input ~ 0
-BAT_SCL
-Text GLabel 9450 6550 3    39   Input ~ 0
-BAT_SDA
 $EndSCHEMATC
