@@ -90,68 +90,68 @@ KB_ROW_10
 $Comp
 L Interface_Expansion:MCP23017_SS U8
 U 1 1 5F8EBE0E
-P 3200 6600
-F 0 "U8" H 3200 7881 50  0000 C CNN
-F 1 "MCP23017_SS" H 3200 7790 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 3400 5600 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3400 5500 50  0001 L CNN
-	1    3200 6600
+P 2800 6600
+F 0 "U8" H 2800 7881 50  0000 C CNN
+F 1 "MCP23017_SS" H 2800 7790 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 3000 5600 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3000 5500 50  0001 L CNN
+	1    2800 6600
 	1    0    0    -1  
 $EndComp
-Text GLabel 3900 5800 2    50   Input ~ 0
+Text GLabel 3500 5800 2    50   Input ~ 0
 KB_COL_1
-Text GLabel 3900 5900 2    50   Input ~ 0
+Text GLabel 3500 5900 2    50   Input ~ 0
 KB_COL_2
-Text GLabel 3900 6000 2    50   Input ~ 0
+Text GLabel 3500 6000 2    50   Input ~ 0
 KB_COL_3
-Text GLabel 3900 6100 2    50   Input ~ 0
+Text GLabel 3500 6100 2    50   Input ~ 0
 KB_COL_4
-Text GLabel 3900 6200 2    50   Input ~ 0
+Text GLabel 3500 6200 2    50   Input ~ 0
 KB_COL_5
-Text GLabel 3900 6300 2    50   Input ~ 0
+Text GLabel 3500 6300 2    50   Input ~ 0
 KB_COL_6
-Text GLabel 3900 6400 2    50   Input ~ 0
+Text GLabel 3500 6400 2    50   Input ~ 0
 KB_COL_7
-Text GLabel 3900 6500 2    50   Input ~ 0
+Text GLabel 3500 6500 2    50   Input ~ 0
 KB_COL_8
-Text GLabel 3900 6700 2    50   Input ~ 0
+Text GLabel 3500 6700 2    50   Input ~ 0
 KB_COL_9
-Text GLabel 3900 6800 2    50   Input ~ 0
+Text GLabel 3500 6800 2    50   Input ~ 0
 KB_COL_10
-Text GLabel 3900 6900 2    50   Input ~ 0
+Text GLabel 3500 6900 2    50   Input ~ 0
 KB_COL_11
-Text GLabel 3900 7000 2    50   Input ~ 0
+Text GLabel 3500 7000 2    50   Input ~ 0
 KB_COL_12
-Text GLabel 3900 7100 2    50   Input ~ 0
+Text GLabel 3500 7100 2    50   Input ~ 0
 KB_COL_13
-Text GLabel 3900 7200 2    50   Input ~ 0
+Text GLabel 3500 7200 2    50   Input ~ 0
 KB_COL_14
-NoConn ~ 3900 7300
-NoConn ~ 3900 7400
-Text GLabel 2500 5800 0    39   Input ~ 0
+NoConn ~ 3500 7300
+NoConn ~ 3500 7400
+Text GLabel 2100 5800 0    39   Input ~ 0
 BAT_SDA
-Text GLabel 2500 5900 0    39   Input ~ 0
+Text GLabel 2100 5900 0    39   Input ~ 0
 BAT_SCL
 $Comp
 L power:GND #PWR0130
 U 1 1 5F97902E
-P 3200 7700
-F 0 "#PWR0130" H 3200 7450 50  0001 C CNN
-F 1 "GND" H 3205 7527 50  0000 C CNN
-F 2 "" H 3200 7700 50  0001 C CNN
-F 3 "" H 3200 7700 50  0001 C CNN
-	1    3200 7700
+P 2800 7700
+F 0 "#PWR0130" H 2800 7450 50  0001 C CNN
+F 1 "GND" H 2805 7527 50  0000 C CNN
+F 2 "" H 2800 7700 50  0001 C CNN
+F 3 "" H 2800 7700 50  0001 C CNN
+	1    2800 7700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0131
 U 1 1 5F9B509C
-P 3200 5500
-F 0 "#PWR0131" H 3200 5350 50  0001 C CNN
-F 1 "+3.3V" H 3215 5673 50  0000 C CNN
-F 2 "" H 3200 5500 50  0001 C CNN
-F 3 "" H 3200 5500 50  0001 C CNN
-	1    3200 5500
+P 2800 5500
+F 0 "#PWR0131" H 2800 5350 50  0001 C CNN
+F 1 "+3.3V" H 2815 5673 50  0000 C CNN
+F 2 "" H 2800 5500 50  0001 C CNN
+F 3 "" H 2800 5500 50  0001 C CNN
+	1    2800 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -187,37 +187,37 @@ F 3 "~" H 1200 5650 50  0001 C CNN
 	1    1200 5650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2500 6400
-NoConn ~ 2500 6500
+NoConn ~ 2100 6400
+NoConn ~ 2100 6500
 $Comp
 L power:+3.3V #PWR0134
 U 1 1 5F9F0EAC
-P 2500 6700
-F 0 "#PWR0134" H 2500 6550 50  0001 C CNN
-F 1 "+3.3V" V 2515 6828 50  0000 L CNN
-F 2 "" H 2500 6700 50  0001 C CNN
-F 3 "" H 2500 6700 50  0001 C CNN
-	1    2500 6700
+P 2100 6700
+F 0 "#PWR0134" H 2100 6550 50  0001 C CNN
+F 1 "+3.3V" V 2115 6828 50  0000 L CNN
+F 2 "" H 2100 6700 50  0001 C CNN
+F 3 "" H 2100 6700 50  0001 C CNN
+	1    2100 6700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0135
 U 1 1 5F9F243C
-P 2400 7300
-F 0 "#PWR0135" H 2400 7050 50  0001 C CNN
-F 1 "GND" V 2405 7172 50  0000 R CNN
-F 2 "" H 2400 7300 50  0001 C CNN
-F 3 "" H 2400 7300 50  0001 C CNN
-	1    2400 7300
+P 2000 7300
+F 0 "#PWR0135" H 2000 7050 50  0001 C CNN
+F 1 "GND" V 2005 7172 50  0000 R CNN
+F 2 "" H 2000 7300 50  0001 C CNN
+F 3 "" H 2000 7300 50  0001 C CNN
+	1    2000 7300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2400 7300 2500 7300
+	2000 7300 2100 7300
 Wire Wire Line
-	2500 7200 2500 7300
-Connection ~ 2500 7300
+	2100 7200 2100 7300
+Connection ~ 2100 7300
 Wire Wire Line
-	2500 7300 2500 7400
+	2100 7300 2100 7400
 Text Notes 7050 6750 0    118  ~ 0
 Switches: FSM4JSMAATR  
 $Comp
@@ -2793,4 +2793,113 @@ Wire Wire Line
 Connection ~ 10750 1650
 Wire Wire Line
 	10750 1650 10750 1750
+$Comp
+L Interface_Expansion:MCP23017_SS U9
+U 1 1 614CD4FF
+P 5200 6600
+F 0 "U9" H 5200 7881 50  0000 C CNN
+F 1 "MCP23017_SS" H 5200 7790 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 5400 5600 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5400 5500 50  0001 L CNN
+	1    5200 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 5800 0    39   Input ~ 0
+BAT_SDA
+Text GLabel 4500 5900 0    39   Input ~ 0
+BAT_SCL
+NoConn ~ 4500 6400
+NoConn ~ 4500 6500
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 61601386
+P 4500 6700
+F 0 "#PWR0125" H 4500 6550 50  0001 C CNN
+F 1 "+3.3V" V 4515 6828 50  0000 L CNN
+F 2 "" H 4500 6700 50  0001 C CNN
+F 3 "" H 4500 6700 50  0001 C CNN
+	1    4500 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 61602403
+P 4400 7200
+F 0 "#PWR0136" H 4400 6950 50  0001 C CNN
+F 1 "GND" V 4405 7072 50  0000 R CNN
+F 2 "" H 4400 7200 50  0001 C CNN
+F 3 "" H 4400 7200 50  0001 C CNN
+	1    4400 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 7200 4500 7200
+Wire Wire Line
+	4500 7300 4500 7200
+Connection ~ 4500 7200
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 6166826B
+P 4500 7400
+F 0 "#PWR0137" H 4500 7250 50  0001 C CNN
+F 1 "+3.3V" V 4515 7528 50  0000 L CNN
+F 2 "" H 4500 7400 50  0001 C CNN
+F 3 "" H 4500 7400 50  0001 C CNN
+	1    4500 7400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 6166895E
+P 5200 7700
+F 0 "#PWR0138" H 5200 7450 50  0001 C CNN
+F 1 "GND" H 5205 7527 50  0000 C CNN
+F 2 "" H 5200 7700 50  0001 C CNN
+F 3 "" H 5200 7700 50  0001 C CNN
+	1    5200 7700
+	1    0    0    -1  
+$EndComp
+Text GLabel 5900 5800 2    50   Input ~ 0
+KB_ROW_1
+Text GLabel 5900 5900 2    50   Input ~ 0
+KB_ROW_2
+Text GLabel 5900 6000 2    50   Input ~ 0
+KB_ROW_3
+Text GLabel 5900 6100 2    50   Input ~ 0
+KB_ROW_4
+Text GLabel 5900 6200 2    50   Input ~ 0
+KB_ROW_5
+Text GLabel 5900 6300 2    50   Input ~ 0
+KB_ROW_6
+Text GLabel 5900 6400 2    50   Input ~ 0
+KB_ROW_7
+Text GLabel 5900 6500 2    50   Input ~ 0
+KB_ROW_8
+Text GLabel 5900 6700 2    50   Input ~ 0
+KB_ROW_9
+Text GLabel 5900 6800 2    50   Input ~ 0
+KB_ROW_10
+$Comp
+L power:+3.3V #PWR0140
+U 1 1 61669430
+P 5200 5500
+F 0 "#PWR0140" H 5200 5350 50  0001 C CNN
+F 1 "+3.3V" V 5215 5628 50  0000 L CNN
+F 2 "" H 5200 5500 50  0001 C CNN
+F 3 "" H 5200 5500 50  0001 C CNN
+	1    5200 5500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5900 6900
+NoConn ~ 5900 7000
+NoConn ~ 5900 7100
+NoConn ~ 5900 7200
+NoConn ~ 5900 7300
+NoConn ~ 5900 7400
+Text Notes 2400 8200 0    157  ~ 0
+colums              rows
+Text Notes 2500 7300 0    39   ~ 0
+0x20
+Text Notes 4900 7300 0    39   ~ 0
+0x21
 $EndSCHEMATC

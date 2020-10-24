@@ -82,15 +82,9 @@ F 3 "~" H 8000 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 1250 6900 1250
-Wire Wire Line
 	7700 1350 7800 1350
 Wire Wire Line
 	7800 1350 7800 1250
-Wire Wire Line
-	7800 1250 7700 1250
-Wire Wire Line
-	7800 1250 8000 1250
 Connection ~ 7800 1250
 Connection ~ 8000 1250
 $Comp
@@ -170,8 +164,6 @@ $EndComp
 Wire Wire Line
 	1000 4800 1100 4800
 Connection ~ 1000 4800
-Text GLabel 1400 4200 2    50   Input ~ 0
-VUSB
 Text GLabel 5850 3750 0    50   Input ~ 0
 VUSB
 Wire Wire Line
@@ -592,8 +584,6 @@ F 3 "~" H 6050 3600 50  0001 C CNN
 	1    6050 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 3750 6050 3750
 Connection ~ 6050 3750
 $Comp
 L power:GND #PWR?
@@ -691,8 +681,6 @@ Connection ~ 9000 3750
 Wire Wire Line
 	9000 3750 8600 3750
 Wire Wire Line
-	7350 3750 7300 3750
-Wire Wire Line
 	9000 3450 8600 3450
 Connection ~ 8200 3450
 Wire Wire Line
@@ -717,24 +705,6 @@ Text Notes 8150 3850 0    39   ~ 0
 SYS: 3.5V-4.35V
 Text GLabel 6000 1250 0    39   Input ~ 0
 V_SYS
-$Comp
-L Device:C_Small C?
-U 1 1 60D3B51D
-P 7300 3950
-AR Path="/5F7C29DF/60D3B51D" Ref="C?"  Part="1" 
-AR Path="/60CFD8F5/60D3B51D" Ref="C8"  Part="1" 
-F 0 "C8" H 7392 3996 50  0000 L CNN
-F 1 "47nF" H 7392 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7300 3950 50  0001 C CNN
-F 3 "~" H 7300 3950 50  0001 C CNN
-	1    7300 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 3850 7300 3750
-Connection ~ 7300 3750
-Wire Wire Line
-	7300 3750 7250 3750
 Wire Wire Line
 	7200 4050 7300 4050
 $Comp
@@ -779,19 +749,12 @@ F 3 "" H 6650 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 4350 7700 4350
+	7200 4350 7400 4350
 Wire Wire Line
 	7700 4350 7700 3750
 Connection ~ 7700 3750
 Wire Wire Line
 	7700 3750 7650 3750
-Wire Wire Line
-	7200 3850 7250 3850
-Wire Wire Line
-	7250 3850 7250 3750
-Connection ~ 7250 3750
-Wire Wire Line
-	7250 3750 7200 3750
 Wire Wire Line
 	7200 4450 7700 4450
 Wire Wire Line
@@ -865,8 +828,6 @@ Text GLabel 6250 4250 0    50   Input ~ 0
 USB0_DM
 Wire Wire Line
 	6050 3750 6250 3750
-Wire Wire Line
-	6250 3850 6050 3850
 Wire Wire Line
 	6050 3850 6050 3750
 $Comp
@@ -1033,4 +994,98 @@ BQ_BATP
 Wire Wire Line
 	6300 1250 6650 1250
 Connection ~ 6650 1250
+Wire Wire Line
+	7800 1250 8000 1250
+Wire Wire Line
+	7800 1250 7700 1250
+Wire Wire Line
+	5850 3750 6050 3750
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 6185E135
+P 3850 10750
+F 0 "#FLG0107" H 3850 10825 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 10923 50  0000 C CNN
+F 2 "" H 3850 10750 50  0001 C CNN
+F 3 "~" H 3850 10750 50  0001 C CNN
+	1    3850 10750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 6185F480
+P 7400 4350
+F 0 "#FLG0108" H 7400 4425 50  0001 C CNN
+F 1 "PWR_FLAG" H 7400 4523 50  0000 C CNN
+F 2 "" H 7400 4350 50  0001 C CNN
+F 3 "~" H 7400 4350 50  0001 C CNN
+	1    7400 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 4350
+Wire Wire Line
+	7400 4350 7700 4350
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 618606ED
+P 7350 4650
+F 0 "#FLG0109" H 7350 4725 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 4823 50  0000 C CNN
+F 2 "" H 7350 4650 50  0001 C CNN
+F 3 "~" H 7350 4650 50  0001 C CNN
+	1    7350 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1250 6900 1250
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 6186631C
+P 6650 1250
+F 0 "#FLG0103" H 6650 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6650 1423 50  0000 C CNN
+F 2 "" H 6650 1250 50  0001 C CNN
+F 3 "~" H 6650 1250 50  0001 C CNN
+	1    6650 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 4200 2    39   Input ~ 0
+VUSB
+Wire Wire Line
+	6050 3850 6250 3850
+$Comp
+L Device:C_Small C?
+U 1 1 60D3B51D
+P 7300 3950
+AR Path="/5F7C29DF/60D3B51D" Ref="C?"  Part="1" 
+AR Path="/60CFD8F5/60D3B51D" Ref="C8"  Part="1" 
+F 0 "C8" H 7392 3996 50  0000 L CNN
+F 1 "47nF" H 7392 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7300 3950 50  0001 C CNN
+F 3 "~" H 7300 3950 50  0001 C CNN
+	1    7300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3850 7300 3850
+Wire Wire Line
+	7200 3750 7300 3750
+Wire Wire Line
+	7300 3850 7300 3750
+Connection ~ 7300 3850
+Connection ~ 7300 3750
+Wire Wire Line
+	7300 3750 7350 3750
+Connection ~ 7300 4050
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6184D393
+P 7300 4050
+F 0 "#FLG0102" H 7300 4125 50  0001 C CNN
+F 1 "PWR_FLAG" V 7300 4178 50  0000 L CNN
+F 2 "" H 7300 4050 50  0001 C CNN
+F 3 "~" H 7300 4050 50  0001 C CNN
+	1    7300 4050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

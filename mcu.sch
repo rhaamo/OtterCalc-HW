@@ -160,12 +160,6 @@ Text GLabel 11050 9600 2    50   Input ~ 0
 RGBLED1_G
 Text GLabel 10550 9600 2    50   Input ~ 0
 RGBLED1_B
-Text GLabel 15050 7650 2    50   Input ~ 0
-RGBLED1_R
-Text GLabel 15050 7350 2    50   Input ~ 0
-RGBLED1_G
-Text GLabel 15050 7250 2    50   Input ~ 0
-RGBLED1_B
 $Comp
 L Device:Buzzer BZ1
 U 1 1 5F94A1A0
@@ -676,12 +670,12 @@ LCD_B2
 Text Notes 13650 4450 0    39   ~ 0
 in blue text is\nthe function\nor alternate\nof the pin
 $Comp
-L Connector_Generic:Conn_01x05 J4
+L Connector_Generic:Conn_01x04 J4
 U 1 1 5F9E8C86
 P 1150 9500
 F 0 "J4" H 1068 9075 50  0000 C CNN
 F 1 "I2C1" H 1068 9166 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 1150 9500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 1150 9500 50  0001 C CNN
 F 3 "~" H 1150 9500 50  0001 C CNN
 	1    1150 9500
 	-1   0    0    1   
@@ -711,12 +705,12 @@ $EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 5F9F2110
-P 1350 9700
-F 0 "#PWR0114" H 1350 9450 50  0001 C CNN
-F 1 "GND" V 1355 9572 50  0000 R CNN
-F 2 "" H 1350 9700 50  0001 C CNN
-F 3 "" H 1350 9700 50  0001 C CNN
-	1    1350 9700
+P 1350 9600
+F 0 "#PWR0114" H 1350 9350 50  0001 C CNN
+F 1 "GND" V 1355 9472 50  0000 R CNN
+F 2 "" H 1350 9600 50  0001 C CNN
+F 3 "" H 1350 9600 50  0001 C CNN
+	1    1350 9600
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -741,12 +735,10 @@ F 3 "" H 1350 9300 50  0001 C CNN
 	1    1350 9300
 	0    1    1    0   
 $EndComp
-Text GLabel 1350 9600 2    39   Input ~ 0
-I2C1_SDA
 Text GLabel 1350 9500 2    39   Input ~ 0
-I2C1_SCL
+I2C1_SDA
 Text GLabel 1350 9400 2    39   Input ~ 0
-I2C1_SMBA
+I2C1_SCL
 Text GLabel 1350 8700 2    39   Input ~ 0
 SPI1_MISO
 Text GLabel 1350 8600 2    39   Input ~ 0
@@ -866,21 +858,17 @@ Text Notes 13100 5600 0    39   ~ 0
 I2C2_SDA
 Text Notes 13100 5700 0    39   ~ 0
 I2C2_SCL
-Text Notes 13100 5800 0    39   ~ 0
-I2C2_SMBA
-Text GLabel 12750 5750 0    39   Input ~ 0
-I2C1_SMBA
 Text GLabel 12750 5650 0    39   Input ~ 0
 I2C1_SCL
 Text GLabel 12750 5550 0    39   Input ~ 0
 I2C1_SDA
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J9
+L Connector_Generic:Conn_02x04_Odd_Even J9
 U 1 1 5FA5F870
 P 11100 8600
 F 0 "J9" H 11150 8917 50  0000 C CNN
 F 1 "EXT_IOS" H 11150 8826 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 11100 8600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal" H 11100 8600 50  0001 C CNN
 F 3 "~" H 11100 8600 50  0001 C CNN
 	1    11100 8600
 	1    0    0    -1  
@@ -908,13 +896,13 @@ F 3 "" H 11400 8500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 10900 8600 0    39   Input ~ 0
-EXTIO_1
+EXTIO_1_PWM
 Text GLabel 10900 8700 0    39   Input ~ 0
 EXTIO_3
 Text GLabel 11400 8700 2    39   Input ~ 0
 EXTIO_4
 Text GLabel 11400 8600 2    39   Input ~ 0
-EXTIO_2
+EXTIO_2_PWM
 Text Notes 14400 7800 0    39   ~ 0
 USART2_TX
 Text Notes 14400 7900 0    39   ~ 0
@@ -1010,30 +998,8 @@ F 3 "" H 4950 8750 50  0001 C CNN
 	1    4950 8750
 	1    0    0    -1  
 $EndComp
-Text GLabel 12750 4650 0    50   Input ~ 0
-KB_ROW_8
-Text GLabel 12750 4450 0    50   Input ~ 0
-KB_ROW_7
-Text GLabel 12750 4350 0    50   Input ~ 0
-KB_ROW_6
-Text GLabel 12750 4250 0    50   Input ~ 0
-KB_ROW_5
-Text GLabel 12750 4150 0    50   Input ~ 0
-KB_ROW_4
-Text GLabel 12750 4050 0    50   Input ~ 0
-KB_ROW_3
-Text GLabel 12750 3950 0    50   Input ~ 0
-KB_ROW_2
-Text GLabel 12750 3850 0    50   Input ~ 0
-KB_ROW_1
-Text GLabel 12750 7250 0    50   Input ~ 0
-KB_ROW_9
-Text GLabel 12750 7350 0    50   Input ~ 0
-KB_ROW_10
 Text GLabel 15050 2150 2    50   Input ~ 0
 KB_WAKEUP
-Text Notes 3750 10750 0    118  ~ 0
-PWR On button is KB_COL_1 / KB_ROW_11\nESC button is KB_COL_12 / KB_ROW_1
 Text GLabel 3000 9050 0    50   Input ~ 0
 KB_COL_12
 $Comp
@@ -1095,30 +1061,6 @@ Text GLabel 12750 2350 0    50   Input ~ 0
 BOOT0
 Text Notes 600  11100 0    98   ~ 0
 TODO to validate:\n- BOOT0 behavior\n- WAKEUP through ON behavior\n- RESET
-Text Notes 15500 4300 0    39   ~ 0
-TIM3_CH1
-Text Notes 3750 11050 0    79   ~ 0
-COL are inputs, pull-up sw\nROW output
-Text Notes 13050 3900 0    39   ~ 0
-keyboard row in
-Text Notes 13050 4000 0    39   ~ 0
-keyboard row in
-Text Notes 13050 4100 0    39   ~ 0
-keyboard row in
-Text Notes 13050 4200 0    39   ~ 0
-keyboard row in
-Text Notes 13050 4300 0    39   ~ 0
-keyboard row in
-Text Notes 13050 4400 0    39   ~ 0
-keyboard row in
-Text Notes 13050 4500 0    39   ~ 0
-keyboard row in
-Text Notes 13050 7300 0    39   ~ 0
-keyboard row in
-Text Notes 13050 4700 0    39   ~ 0
-keyboard row in
-Text Notes 13050 7400 0    39   ~ 0
-keyboard row in
 Text GLabel 12750 4750 0    39   Input ~ 0
 SERIAL3_RX
 Text Notes 13050 4800 0    39   ~ 0
@@ -1212,10 +1154,6 @@ Text GLabel 15050 3650 2    39   Input ~ 0
 JTDI
 Text GLabel 15050 4150 2    39   Input ~ 0
 JTDO
-Text GLabel 15050 4250 2    39   Input ~ 0
-EXTIO_1
-Text GLabel 15050 8450 2    39   Input ~ 0
-EXTIO_2
 Text GLabel 12750 7050 0    39   Input ~ 0
 BAT_SDA
 Text GLabel 12750 6950 0    39   Input ~ 0
@@ -1228,24 +1166,10 @@ Text Notes 13100 7000 0    39   ~ 0
 I2C4_SCL
 Text Notes 13100 6900 0    39   ~ 0
 i/o
-Text Notes 13100 8700 0    39   ~ 0
-in or out
-Text Notes 14450 4300 0    39   ~ 0
-in or out
-Text Notes 13100 8600 0    39   ~ 0
-in or out
-Text Notes 14400 8500 0    39   ~ 0
-in or out
 Text Notes 13050 4600 0    39   ~ 0
 LCD_CLK
 Text Notes 14400 6200 0    39   ~ 0
 LCD_HSYNC
-Text Notes 14550 7400 0    39   ~ 0
-led out
-Text Notes 14500 7700 0    39   ~ 0
-led out
-Text Notes 14550 7300 0    39   ~ 0
-led out
 Text Notes 14600 4200 0    39   ~ 0
 JTDO
 Text Notes 14600 3700 0    39   ~ 0
@@ -1256,18 +1180,8 @@ Text Notes 14350 3500 0    39   ~ 0
 JTMS_SWDIO
 Text Notes 14450 2600 0    39   ~ 0
 LCD_VSYNC
-Text Notes 15350 4300 0    39   ~ 0
-pwm
-Text Notes 15350 8500 0    39   ~ 0
-pwm
-Text GLabel 12750 8650 0    39   Input ~ 0
-EXTIO_4
-Text GLabel 12750 8550 0    39   Input ~ 0
-EXTIO_3
 Text Notes 14600 2900 0    39   ~ 0
 input
-Text Notes 15500 8500 0    39   ~ 0
-TIM4_CH1
 Text Notes 13100 8200 0    39   ~ 0
 TIM1_CH1
 Text Notes 13100 8100 0    39   ~ 0
@@ -1345,24 +1259,10 @@ F 3 "" H 12750 2850 50  0001 C CNN
 $EndComp
 Text Notes 13200 2900 0    39   ~ 0
 enable internal power\nthing reset
-NoConn ~ 15050 4350
-NoConn ~ 15050 4550
 NoConn ~ 12750 5350
 NoConn ~ 15050 6850
 NoConn ~ 15050 7950
-NoConn ~ 15050 8250
 NoConn ~ 15050 8550
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 603049DE
-P 13400 1700
-F 0 "#FLG0101" H 13400 1775 50  0001 C CNN
-F 1 "PWR_FLAG" H 13400 1873 50  0000 C CNN
-F 2 "" H 13400 1700 50  0001 C CNN
-F 3 "~" H 13400 1700 50  0001 C CNN
-	1    13400 1700
-	1    0    0    -1  
-$EndComp
 Text Notes 700  7150 0    118  ~ 0
 serial / i2c / etc
 Text Notes 2800 7150 0    118  ~ 0
@@ -1385,7 +1285,7 @@ Text Notes 1500 5350 0    118  ~ 0
 uSD card
 Wire Notes Line
 	3850 5000 3850 8450
-Text Notes 10600 9200 0    118  ~ 0
+Text Notes 10600 9300 0    118  ~ 0
 RGB Led status
 Text Notes 8300 8250 0    118  ~ 0
 Flash
@@ -1559,8 +1459,6 @@ Wire Notes Line
 Wire Notes Line
 	7050 7950 12200 7950
 Wire Notes Line
-	12200 8800 10250 8800
-Wire Notes Line
 	7050 7500 7050 9950
 $Comp
 L Device:R R16
@@ -1684,7 +1582,7 @@ F 3 "~" H 8250 5500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6450 6000 5900 6000
+	6450 6000 6250 6000
 Connection ~ 5900 6000
 Wire Wire Line
 	8050 6000 8050 5500
@@ -1863,7 +1761,7 @@ Wire Wire Line
 	7250 6750 7250 6700
 Connection ~ 7250 6700
 Wire Wire Line
-	7250 6700 6450 6700
+	7250 6700 6750 6700
 Wire Wire Line
 	7200 7100 7250 7100
 Wire Wire Line
@@ -2279,18 +2177,6 @@ $EndComp
 Text Notes 15650 6700 0    39   ~ 0
 ABS07-166-32.768KHZ-T
 $Comp
-L d_st:STM32F750Z8 U5
-U 1 1 5F863DEB
-P 13900 2050
-F 0 "U5" H 13900 -500 157 0000 C CNN
-F 1 "STM32F750Z8" H 13900 3250 157 0000 C CNN
-F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 13800 2200 157 0001 C CNN
-F 3 "" H 13800 2200 157 0001 C CNN
-F 4 "C411817" H 13900 2050 50  0001 C CNN "lcsc"
-	1    13900 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C29
 U 1 1 6102D7D8
 P 11850 3450
@@ -2569,7 +2455,7 @@ R VF=1.8-2.4 FC=30\nG VF=2.8-3.9 FC=20\nB VF=2.8-3.9 FC=20\nSupply=3.3
 Text GLabel 10850 1450 2    50   Input ~ 0
 KB_WAKEUP
 Text Notes 9650 3500 0    59   ~ 0
-internal i2c:\n6BH - Battery charger\nBA/BB or 28/29 - Touch display\n20 - Keyboard matrix output
+internal i2c (bat_xxx):\n6BH - Battery charger\nBA/BB or 28/29 - Touch display\n20 - Keyboard matrix columns\n21 - Keyboard matrix rows
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5FA49B5B
@@ -2632,8 +2518,6 @@ NoConn ~ 12750 5950
 NoConn ~ 12750 6050
 NoConn ~ 12750 7550
 NoConn ~ 12750 8250
-NoConn ~ 15050 8650
-NoConn ~ 15050 8750
 NoConn ~ 15050 3950
 NoConn ~ 12750 6750
 $Comp
@@ -2675,4 +2559,94 @@ Wire Wire Line
 	10500 750  10650 750 
 Wire Wire Line
 	10650 750  10650 850 
+NoConn ~ 12750 5750
+$Comp
+L d_st:STM32F750Z8 U5
+U 1 1 5F863DEB
+P 13900 2050
+F 0 "U5" H 13900 -500 157 0000 C CNN
+F 1 "STM32F750Z8" H 13900 3250 157 0000 C CNN
+F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 13800 2200 157 0001 C CNN
+F 3 "" H 13800 2200 157 0001 C CNN
+F 4 "C411817" H 13900 2050 50  0001 C CNN "lcsc"
+	1    13900 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 15050 8650 2    39   Input ~ 0
+EXTIO_1_PWM
+Text Notes 14350 8650 0    39   ~ 0
+in/out/pwm
+Text GLabel 15050 8750 2    39   Input ~ 0
+EXTIO_2_PWM
+Text Notes 14350 8750 0    39   ~ 0
+in/out/pwm
+Text Notes 15550 8800 0    59   ~ 0
+pwm:\ntim4_ch3\ntim4_ch4
+Wire Notes Line
+	10250 9050 12200 9050
+Text GLabel 10900 8800 0    39   Input ~ 0
+EXTIO_5
+Text GLabel 11400 8800 2    39   Input ~ 0
+EXTIO_6
+Text GLabel 12750 4050 0    39   Input ~ 0
+EXTIO_3
+Text GLabel 12750 4150 0    39   Input ~ 0
+EXTIO_4
+Text GLabel 12750 4250 0    39   Input ~ 0
+EXTIO_5
+Text GLabel 12750 4350 0    39   Input ~ 0
+EXTIO_6
+Text GLabel 15050 4550 2    50   Input ~ 0
+RGBLED1_B
+Text GLabel 15050 4350 2    50   Input ~ 0
+RGBLED1_G
+Text GLabel 15050 4250 2    50   Input ~ 0
+RGBLED1_R
+Text Notes 14300 4300 0    39   ~ 0
+led out / pwm
+Text Notes 14300 4400 0    39   ~ 0
+led out / pwm
+Text Notes 14300 4600 0    39   ~ 0
+led out / pwm
+NoConn ~ 12750 3850
+NoConn ~ 12750 3950
+NoConn ~ 12750 4450
+NoConn ~ 12750 4650
+NoConn ~ 12750 7250
+NoConn ~ 12750 7350
+NoConn ~ 12750 8550
+NoConn ~ 12750 8650
+NoConn ~ 15050 8450
+NoConn ~ 15050 8250
+NoConn ~ 15050 7250
+NoConn ~ 15050 7350
+NoConn ~ 15050 7650
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 61831313
+P 6750 6700
+F 0 "#FLG0105" H 6750 6775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 6873 50  0000 C CNN
+F 2 "" H 6750 6700 50  0001 C CNN
+F 3 "~" H 6750 6700 50  0001 C CNN
+	1    6750 6700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 6700
+Wire Wire Line
+	6750 6700 6450 6700
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 6183251A
+P 6250 6000
+F 0 "#FLG0106" H 6250 6075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6250 6173 50  0000 C CNN
+F 2 "" H 6250 6000 50  0001 C CNN
+F 3 "~" H 6250 6000 50  0001 C CNN
+	1    6250 6000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 6000
+Wire Wire Line
+	6250 6000 5900 6000
 $EndSCHEMATC
