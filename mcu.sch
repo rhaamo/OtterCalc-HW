@@ -1215,9 +1215,9 @@ F 3 "" H 12750 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 12150 1300 3    39   Input ~ 0
-BAT_SDA
+INT_SDA
 Text GLabel 12450 1300 3    39   Input ~ 0
-BAT_SCL
+INT_SCL
 $Comp
 L Device:R R11
 U 1 1 602407FE
@@ -1420,9 +1420,9 @@ F 3 "" H 9800 7200 50  0001 C CNN
 $EndComp
 NoConn ~ 12750 6350
 Text GLabel 10150 6900 0    39   Input ~ 0
-I2C1_SCL
+INT_SCL
 Text GLabel 10150 7000 0    39   Input ~ 0
-I2C1_SDA
+INT_SDA
 $Comp
 L power:GND #PWR018
 U 1 1 6061D658
@@ -2455,7 +2455,7 @@ R VF=1.8-2.4 FC=30\nG VF=2.8-3.9 FC=20\nB VF=2.8-3.9 FC=20\nSupply=3.3
 Text GLabel 10850 1450 2    50   Input ~ 0
 KB_WAKEUP
 Text Notes 9650 3500 0    59   ~ 0
-internal i2c (int_xxx):\n6BH - Battery charger\n20 - Keyboard matrix columns\n21 - Keyboard matrix rows\n\nuser i2c (i2c1_xxx):\nBA/BB or 28/29 - Touch display\n
+internal i2c (int_xxx):\n6BH - Battery charger\n20 - Keyboard matrix columns\n21 - Keyboard matrix rows\nBA/BB or 28/29 - Touch display\n
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5FA49B5B
