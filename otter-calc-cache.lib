@@ -957,6 +957,29 @@ X EP 7 100 -300 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_FSM4JSMAATR
+#
+DEF SamacSys_Parts_FSM4JSMAATR S 0 30 Y Y 1 F N
+F0 "S" 1050 300 50 H V L CNN
+F1 "SamacSys_Parts_FSM4JSMAATR" 1050 200 50 H V L CNN
+F2 "FSM4JSMATR" 1050 100 50 H I L CNN
+F3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F1571563-4" 1050 0 50 H I L CNN
+F4 "TE CONNECTIVITY / ALCOSWITCH - FSM4JSMAATR - TACTILE SWITCH, SPST-NO, 0.05A, 24V, SMD" 1050 -100 50 H I L CNN "Description"
+F5 "TE Connectivity" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F6 "FSM4JSMAATR" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "FSM4JSMAATR" 1050 -500 50 H I L CNN "Arrow Part Number"
+F8 "https://www.arrow.com/en/products/fsm4jsmaatr/te-connectivity" 1050 -600 50 H I L CNN "Arrow Price/Stock"
+F9 "506-FSM4JSMAATR" 1050 -700 50 H I L CNN "Mouser Part Number"
+F10 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/FSM4JSMAATR?qs=BaILwcusPn8tfgWWpzI4xg%3D%3D" 1050 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+S 200 50 400 -150 0 1 0 N
+X 1 1 600 0 200 L 50 50 0 0 P
+X 2 2 600 -100 200 L 50 50 0 0 P
+X 3 3 0 0 200 R 50 50 0 0 P
+X 4 4 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # Switch_SW_Push
 #
 DEF Switch_SW_Push SW 0 40 N N 1 F N

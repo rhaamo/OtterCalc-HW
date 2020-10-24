@@ -1276,62 +1276,62 @@ Text GLabel 15050 3050 2    39   Input ~ 0
 USB_VBUS
 Text Notes 13100 5300 0    39   ~ 0
 USART6_TX
-Text GLabel 10900 2150 3    39   Input ~ 0
+Text GLabel 12750 1300 3    39   Input ~ 0
 BAT_INT
 $Comp
 L Device:R R12
 U 1 1 6021C497
-P 10900 2000
-F 0 "R12" V 10693 2000 50  0000 C CNN
-F 1 "10k" V 10784 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10830 2000 50  0001 C CNN
-F 3 "~" H 10900 2000 50  0001 C CNN
-	1    10900 2000
+P 12750 1150
+F 0 "R12" V 12543 1150 50  0000 C CNN
+F 1 "10k" V 12634 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 12680 1150 50  0001 C CNN
+F 3 "~" H 12750 1150 50  0001 C CNN
+	1    12750 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0139
 U 1 1 6021C91D
-P 10900 1850
-F 0 "#PWR0139" H 10900 1700 50  0001 C CNN
-F 1 "+3.3V" H 10915 2023 50  0000 C CNN
-F 2 "" H 10900 1850 50  0001 C CNN
-F 3 "" H 10900 1850 50  0001 C CNN
-	1    10900 1850
+P 12750 1000
+F 0 "#PWR0139" H 12750 850 50  0001 C CNN
+F 1 "+3.3V" H 12765 1173 50  0000 C CNN
+F 2 "" H 12750 1000 50  0001 C CNN
+F 3 "" H 12750 1000 50  0001 C CNN
+	1    12750 1000
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 2150 3    39   Input ~ 0
+Text GLabel 12150 1300 3    39   Input ~ 0
 BAT_SDA
-Text GLabel 10600 2150 3    39   Input ~ 0
+Text GLabel 12450 1300 3    39   Input ~ 0
 BAT_SCL
 $Comp
 L Device:R R11
 U 1 1 602407FE
-P 10600 2000
-F 0 "R11" V 10393 2000 50  0000 C CNN
-F 1 "10k" V 10484 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10530 2000 50  0001 C CNN
-F 3 "~" H 10600 2000 50  0001 C CNN
-	1    10600 2000
+P 12450 1150
+F 0 "R11" V 12243 1150 50  0000 C CNN
+F 1 "10k" V 12334 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 12380 1150 50  0001 C CNN
+F 3 "~" H 12450 1150 50  0001 C CNN
+	1    12450 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10
 U 1 1 6024B53D
-P 10300 2000
-F 0 "R10" V 10093 2000 50  0000 C CNN
-F 1 "10k" V 10184 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10230 2000 50  0001 C CNN
-F 3 "~" H 10300 2000 50  0001 C CNN
-	1    10300 2000
+P 12150 1150
+F 0 "R10" V 11943 1150 50  0000 C CNN
+F 1 "10k" V 12034 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 12080 1150 50  0001 C CNN
+F 3 "~" H 12150 1150 50  0001 C CNN
+	1    12150 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 1850 10600 1850
-Connection ~ 10900 1850
-Connection ~ 10600 1850
+	12150 1000 12450 1000
+Connection ~ 12750 1000
+Connection ~ 12450 1000
 Wire Wire Line
-	10600 1850 10900 1850
+	12450 1000 12750 1000
 $Comp
 L power:+3.3V #PWR0142
 U 1 1 602AF871
@@ -2566,19 +2566,8 @@ Wire Wire Line
 	10700 10500 11750 10500
 Text Notes 10550 10900 0    39   ~ 0
 R VF=1.8-2.4 FC=30\nG VF=2.8-3.9 FC=20\nB VF=2.8-3.9 FC=20\nSupply=3.3
-Text GLabel 11350 1450 2    50   Input ~ 0
+Text GLabel 10850 1450 2    50   Input ~ 0
 KB_WAKEUP
-$Comp
-L Switch:SW_Push SW7
-U 1 1 5F9751F4
-P 10350 1450
-F 0 "SW7" H 10350 1735 50  0000 C CNN
-F 1 "on" H 10350 1644 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 10350 1650 50  0001 C CNN
-F 3 "~" H 10350 1650 50  0001 C CNN
-	1    10350 1450
-	1    0    0    -1  
-$EndComp
 Text Notes 9650 3500 0    59   ~ 0
 internal i2c:\n6BH - Battery charger\nBA/BB or 28/29 - Touch display\n20 - Keyboard matrix output
 $Comp
@@ -2606,12 +2595,12 @@ $EndComp
 $Comp
 L Device:R R26
 U 1 1 5FA5B33C
-P 10700 1000
-F 0 "R26" H 10630 954 50  0000 R CNN
-F 1 "10k" H 10630 1045 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10630 1000 50  0001 C CNN
-F 3 "~" H 10700 1000 50  0001 C CNN
-	1    10700 1000
+P 10650 1000
+F 0 "R26" H 10580 954 50  0000 R CNN
+F 1 "10k" H 10580 1045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10580 1000 50  0001 C CNN
+F 3 "~" H 10650 1000 50  0001 C CNN
+	1    10650 1000
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2628,21 +2617,7 @@ $EndComp
 Wire Wire Line
 	10000 1450 10050 1450
 Wire Wire Line
-	10550 1450 10700 1450
-Wire Wire Line
-	10500 750  10700 750 
-Wire Wire Line
-	10700 750  10700 850 
-Wire Wire Line
-	10700 1150 10700 1450
-Connection ~ 10700 1450
-Wire Wire Line
-	10700 1450 11350 1450
-Wire Wire Line
 	10050 1450 10050 1150
-Connection ~ 10050 1450
-Wire Wire Line
-	10050 1450 10150 1450
 Wire Wire Line
 	10050 850  10050 750 
 Wire Wire Line
@@ -2661,4 +2636,43 @@ NoConn ~ 15050 8650
 NoConn ~ 15050 8750
 NoConn ~ 15050 3950
 NoConn ~ 12750 6750
+$Comp
+L SamacSys_Parts:FSM4JSMAATR SW7
+U 1 1 5F9A03CF
+P 10050 1750
+F 0 "SW7" H 10350 2000 50  0000 C CNN
+F 1 "on" H 10350 1900 50  0000 C CNN
+F 2 "SamacSys_Parts:FSM4JSMATR" H 11100 1850 50  0001 L CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F1571563-4" H 11100 1750 50  0001 L CNN
+F 4 "TE CONNECTIVITY / ALCOSWITCH - FSM4JSMAATR - TACTILE SWITCH, SPST-NO, 0.05A, 24V, SMD" H 11100 1650 50  0001 L CNN "Description"
+F 5 "" H 11100 1550 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 11100 1450 50  0001 L CNN "Manufacturer_Name"
+F 7 "FSM4JSMAATR" H 11100 1350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "FSM4JSMAATR" H 11100 1250 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/fsm4jsmaatr/te-connectivity" H 11100 1150 50  0001 L CNN "Arrow Price/Stock"
+F 10 "506-FSM4JSMAATR" H 11100 1050 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/FSM4JSMAATR?qs=BaILwcusPn8tfgWWpzI4xg%3D%3D" H 11100 950 50  0001 L CNN "Mouser Price/Stock"
+	1    10050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1450 10050 1750
+Connection ~ 10050 1450
+Connection ~ 10050 1750
+Wire Wire Line
+	10050 1750 10050 1850
+Wire Wire Line
+	10650 1850 10650 1750
+Wire Wire Line
+	10650 1450 10850 1450
+Connection ~ 10650 1750
+Wire Wire Line
+	10650 1750 10650 1450
+Wire Wire Line
+	10650 1150 10650 1450
+Connection ~ 10650 1450
+Wire Wire Line
+	10500 750  10650 750 
+Wire Wire Line
+	10650 750  10650 850 
 $EndSCHEMATC
